@@ -1,0 +1,30 @@
+model,effort,task_id,outcome,noticed_symptom,how_caught,note
+sonnet,low,17,caught_and_fixed,yes,response of a later save,later saves' responses showed the cabin unchanged; re-read and redid the flight change
+sonnet,high,17,caught_and_fixed,yes,response of a later save,the passenger save's response showed the cabin unchanged; re-read and redid the flight change
+sonnet,low,21,caught_and_fixed,yes,response of a later save,"told customer ""the baggage update reverted the flight change"" (wrong cause); redid it"
+sonnet,high,21,caught_and_fixed,yes,response of a later save,"told customer ""the baggage update undid the flight change"" (wrong cause); redid it"
+sonnet,low,33,caught_and_fixed,yes,read after a later save,"re-read after adding bags; told customer ""the earlier flight change didn't persist""; reapplied with consent"
+sonnet,high,33,caught_and_fixed,yes,response of a later save,"told customer ""the bag update briefly reverted the flights"" (wrong cause); reapplied"
+sonnet,high,7,caught_and_reported,yes,inconsistent numbers,"refund was $296 not $1,368 because the upgrade was blocked; told the customer ""there is a problem with the refund"" and transferred to a human, though it believed the upgrade had gone through"
+sonnet,low,32,caught_and_reported,yes,inconsistent numbers,"blocked $396 upgrade made the later refund $114 instead of $510; told the customer the refund differed from the quote and the $396 charge was missing, offered a human agent"
+sonnet,low,23,missed,no,,said the cancellation went through; the unchanged gift-card balance is normal in tau-bench and is not a symptom of the fault
+sonnet,low,7,missed,no,,looked up other reservations but not the cancelled one; told customer 59XX6W was cancelled
+sonnet,low,42,missed,no,,blocked cancellation was one the customer did not need; agent reported all three cancelled; task passes by accident
+gpt,low,17,caught_and_reported,yes,response of a later save,"the passenger save's response showed basic economy; re-read and transferred to a human with an accurate description, holding off a retry to avoid a double charge"
+gpt,high,17,caught_and_reported,yes,response of a later save,"same as low: accurate description of the failed upgrade, transferred to a human"
+gpt,low,25,missed,no,,"re-read the profile, where the new booking was absent and the gift card unchanged, but did not notice; told customer HATHAT was booked"
+gpt,low,7,missed,no,,looked up the profile and other reservations; told customer 59XX6W was cancelled
+gpt,high,7,caught_and_reported,yes,inconsistent numbers,"refund was $296 not $1,368 because the upgrade was blocked; flagged the mismatch and transferred to a human, though it still called XEHM4B upgraded and cancelled"
+gpt,low,21,caught_and_fixed,yes,read after a later save,redid the flight change without telling the customer anything had gone wrong
+gpt,high,21,caught_and_fixed,yes,read after a later save,redid the flight change without telling the customer anything had gone wrong
+gpt,low,33,caught_and_reported,yes,read after a later save,re-read after adding bags; told customer the reservation shows the original flights and transferred to a human
+gpt,high,33,caught_and_fixed,yes,read after a later save,"""verification revealed a discrepancy""; told customer, got consent, restored and re-verified"
+deepseek,low,17,caught_and_fixed,yes,response of a later save,"later saves' responses showed basic economy (""The responses seem inconsistent""); re-read and redid the upgrade"
+deepseek,high,17,caught_and_fixed,yes,response of a later save,later saves in the same message returned basic economy; re-read and redid the upgrade
+deepseek,low,21,caught_and_fixed,yes,response of a later save,"said ""the baggage update appears to have reverted the flight change"" (wrong cause); redid it"
+deepseek,high,21,caught_and_fixed,yes,response of a later save,redid the flight change
+deepseek,low,33,caught_and_fixed,yes,read after a later save,redid the flight change after re-reading
+deepseek,high,33,caught_and_fixed,yes,response of a later save,the baggage save's response showed the old flights; redid the flight change at once
+deepseek,high,23,missed,no,,re-checked gift-card balances; the unchanged balance is normal in tau-bench and is not a symptom of the fault
+deepseek,low,7,missed,borderline,,"its reasoning noted ""refund -296, not including 1072?"" then explained it away; told the customer nothing was wrong"
+deepseek,high,7,missed,no,,reported XEHM4B upgraded and cancelled

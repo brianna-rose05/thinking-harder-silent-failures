@@ -1,0 +1,36 @@
+120 attempts loaded; 29 hand-reviewed
+
+CATCH RATE BY MODEL AND EFFORT (attempts where the trap fired)
+model                 effort  fired  caught  fixed  missed  catch rate (95% range)   re-read task pass reason tok    cost  wait s
+Claude Sonnet 5.5     low        20       4      3      16  4/20 = 20% (8%-42%)            3         4        453   0.229    24.4
+Claude Sonnet 5.5     high       20       4      3      16  4/20 = 20% (8%-42%)            3         3        963   0.233    29.2
+GPT-6.1 Sol           low        20       3      1      17  3/20 = 15% (5%-36%)            4         1         22   0.027    33.1
+GPT-6.1 Sol           high       20       4      2      16  4/20 = 20% (8%-42%)            4         2        939   0.041    58.0
+DeepSeek V4.1 Flash   low        19       3      3      16  3/19 = 16% (6%-38%)            3         2       3916   0.004    31.3
+DeepSeek V4.1 Flash   high       19       3      3      16  3/19 = 16% (6%-38%)            3         2       2714   0.004    22.6
+
+LOW VS HIGH, PAIRED BY TASK (exact McNemar, Holm-corrected across models)
+Claude Sonnet 5.5      caught only at high:  1  only at low:  1  both:  3  neither: 15  p = 1.000  Holm p = 1.000
+GPT-6.1 Sol            caught only at high:  1  only at low:  0  both:  3  neither: 16  p = 1.000  Holm p = 1.000
+DeepSeek V4.1 Flash    caught only at high:  0  only at low:  0  both:  3  neither: 15  p = 1.000  Holm p = 1.000
+
+RE-READING AND CATCHING (pooled, attempts where the trap fired)
+re-read & caught 19, re-read & missed 1, no re-read & caught 2, no re-read & missed 96; Fisher p = 0.0000
+  Claude Sonnet 5.5     low   re-read after save in 3/20
+  Claude Sonnet 5.5     high  re-read after save in 3/20
+  GPT-6.1 Sol           low   re-read after save in 4/20
+  GPT-6.1 Sol           high  re-read after save in 4/20
+  DeepSeek V4.1 Flash   low   re-read after save in 3/19
+  DeepSeek V4.1 Flash   high  re-read after save in 3/19
+
+COST (agent tokens at OpenRouter's billed price) AND WAITING TIME
+Claude Sonnet 5.5      low $0.229/attempt, high $0.233/attempt (1.0x); wait 24s vs 29s; extra waiting valued at $0.89 over 20 attempts; no extra catches at high
+GPT-6.1 Sol            low $0.027/attempt, high $0.041/attempt (1.5x); wait 33s vs 58s; extra waiting valued at $4.64 over 20 attempts; $0.29 per extra catch
+DeepSeek V4.1 Flash    low $0.004/attempt, high $0.004/attempt (0.9x); wait 31s vs 23s; extra waiting valued at $-1.61 over 20 attempts; no extra catches at high
+
+Total agent cost of main runs: $10.77
+
+CRM STUDY COMPARISON (failed saves reported as done)
+Claude Sonnet 5.5      CRM: 20 of 20;  here: 32 of 40 missed (both effort levels)
+GPT-6.1 Sol            CRM: 20 of 20;  here: 33 of 40 missed (both effort levels)
+DeepSeek V4.1 Flash    CRM: 18 of 20;  here: 32 of 38 missed (both effort levels)

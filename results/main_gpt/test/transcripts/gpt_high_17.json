@@ -1,0 +1,2011 @@
+{
+ "id": "6aac0d13-3efb-4185-9574-be7879323ad9",
+ "task_id": "17",
+ "timestamp": "2026-10-27T18:24:30.707005",
+ "start_time": "2026-10-27T18:22:53.763522",
+ "end_time": "2026-10-27T18:24:30.706982",
+ "duration": 96.9406480419998,
+ "termination_reason": "user_stop",
+ "agent_cost": 0.0,
+ "user_cost": 0.0,
+ "reward_info": {
+  "reward": 0.0,
+  "db_check": {
+   "db_match": false,
+   "db_reward": 0.0
+  },
+  "env_assertions": [],
+  "action_checks": null,
+  "nl_assertions": null,
+  "communicate_checks": null,
+  "reward_basis": [
+   "DB",
+   "COMMUNICATE"
+  ],
+  "reward_breakdown": {
+   "DB": 0.0
+  },
+  "info": null
+ },
+ "messages": [
+  {
+   "role": "assistant",
+   "content": "Hi! How can I help you today?",
+   "tool_calls": null,
+   "is_audio": false,
+   "turn_idx": 0,
+   "timestamp": "2026-10-27T18:22:53.763699",
+   "cost": 0.0,
+   "usage": null,
+   "raw_data": null,
+   "generation_time_seconds": null,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "role": "user",
+   "content": "Hi, I'm calling about my upcoming trip from New York to Chicago. I want to add 3 checked bags, change the passenger to myself, and upgrade it to economy class.",
+   "tool_calls": null,
+   "is_audio": false,
+   "turn_idx": 1,
+   "timestamp": "2026-10-27T18:23:01.112859",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 617,
+    "prompt_tokens": 438
+   },
+   "raw_data": {
+    "id": "gen-1793143373-8dieZy0Fvabgv77dVtG5",
+    "created": 1793143373,
+    "model": "qwen/qwen3.7-flash",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+       "content": "Hi, I'm calling about my upcoming trip from New York to Chicago. I want to add 3 checked bags, change the passenger to myself, and upgrade it to economy class.",
+       "role": "assistant",
+       "tool_calls": null,
+       "function_call": null,
+       "reasoning_content": "The user is acting as a customer service representative.\nI need to act as the customer, Omar Rossi.\nMy goal is to contact the airline regarding an upcoming trip from New York to Chicago.\nI need to request three specific things in this order:\n1. Add 3 checked bags.\n2. Change the passenger to myself (Omar Rossi).\n3. Upgrade to economy class.\n\nI should mention all three at once.\nI have known info: Name is Omar Rossi, User ID is omar_rossi_1241.\nTask instructions: Prefer gift card payment, prefer not to provide birthday because it's in the profile.\n\nCurrent turn: The agent asked \"How can I help you today?\".\nI should state my requests immediately as per the instruction \"Mention all three things at once and in this order.\"\n\nDrafting response:\n\"Hi, I'm calling about my upcoming trip from New York to Chicago. I'd like to add 3 checked bags, change the passenger to myself, and upgrade the ticket to economy class.\"\n\nThis covers the domain, reason for call, and the specific order of requests. I haven't provided personal details yet, but the prompt says \"Disclose information progressively. Wait for the agent to ask for specific information before providing it.\" However, usually, one might give their name or ID right away, but strictly following the \"progressive disclosure\" rule suggests waiting unless necessary. But often in these simulations, stating the intent is enough for the first turn. Let's stick to the core requests first.\n\nWait, looking at the instruction \"Mention all three things at once and in this order.\"\nIt doesn't explicitly say \"Don't give your name\". But \"Disclose information progressively\" implies I shouldn't dump everything.\nHowever, usually, a greeting + the main issue is standard.\nLet's just state the requests.\n\nResponse: \"Hi, I'm calling regarding my upcoming trip from New York to Chicago. I would like to add 3 checked bags, change the passenger to myself, and upgrade it to economy class.\"\n\nThis seems correct. It sets up the context. I will wait for the agent to ask for the ID or name if needed, or handle payment/birthday issues when they come up later.\n\nOne check: \"change the passenger to yourself\". Since I am Omar Rossi, I should probably imply that the booking was under someone else's name or just make the request. The instruction says \"change the passenger to yourself\". I will use that phrasing.\n\nFinal Polish:\n\"Hi, I'm calling about my upcoming trip from New York to Chicago. I want to add 3 checked bags, change the passenger to myself, and upgrade it to economy class.\"\n\nThis matches the requirements perfectly.",
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": "The user is acting as a customer service representative.\nI need to act as the customer, Omar Rossi.\nMy goal is to contact the airline regarding an upcoming trip from New York to Chicago.\nI need to request three specific things in this order:\n1. Add 3 checked bags.\n2. Change the passenger to myself (Omar Rossi).\n3. Upgrade to economy class.\n\nI should mention all three at once.\nI have known info: Name is Omar Rossi, User ID is omar_rossi_1241.\nTask instructions: Prefer gift card payment, prefer not to provide birthday because it's in the profile.\n\nCurrent turn: The agent asked \"How can I help you today?\".\nI should state my requests immediately as per the instruction \"Mention all three things at once and in this order.\"\n\nDrafting response:\n\"Hi, I'm calling about my upcoming trip from New York to Chicago. I'd like to add 3 checked bags, change the passenger to myself, and upgrade the ticket to economy class.\"\n\nThis covers the domain, reason for call, and the specific order of requests. I haven't provided personal details yet, but the prompt says \"Disclose information progressively. Wait for the agent to ask for specific information before providing it.\" However, usually, one might give their name or ID right away, but strictly following the \"progressive disclosure\" rule suggests waiting unless necessary. But often in these simulations, stating the intent is enough for the first turn. Let's stick to the core requests first.\n\nWait, looking at the instruction \"Mention all three things at once and in this order.\"\nIt doesn't explicitly say \"Don't give your name\". But \"Disclose information progressively\" implies I shouldn't dump everything.\nHowever, usually, a greeting + the main issue is standard.\nLet's just state the requests.\n\nResponse: \"Hi, I'm calling regarding my upcoming trip from New York to Chicago. I would like to add 3 checked bags, change the passenger to myself, and upgrade it to economy class.\"\n\nThis seems correct. It sets up the context. I will wait for the agent to ask for the ID or name if needed, or handle payment/birthday issues when they come up later.\n\nOne check: \"change the passenger to yourself\". Since I am Omar Rossi, I should probably imply that the booking was under someone else's name or just make the request. The instruction says \"change the passenger to yourself\". I will use that phrasing.\n\nFinal Polish:\n\"Hi, I'm calling about my upcoming trip from New York to Chicago. I want to add 3 checked bags, change the passenger to myself, and upgrade it to economy class.\"\n\nThis matches the requirements perfectly.",
+        "reasoning_details": [
+         {
+          "type": "reasoning.text",
+          "text": "The user is acting as a customer service representative.\nI need to act as the customer, Omar Rossi.\nMy goal is to contact the airline regarding an upcoming trip from New York to Chicago.\nI need to request three specific things in this order:\n1. Add 3 checked bags.\n2. Change the passenger to myself (Omar Rossi).\n3. Upgrade to economy class.\n\nI should mention all three at once.\nI have known info: Name is Omar Rossi, User ID is omar_rossi_1241.\nTask instructions: Prefer gift card payment, prefer not to provide birthday because it's in the profile.\n\nCurrent turn: The agent asked \"How can I help you today?\".\nI should state my requests immediately as per the instruction \"Mention all three things at once and in this order.\"\n\nDrafting response:\n\"Hi, I'm calling about my upcoming trip from New York to Chicago. I'd like to add 3 checked bags, change the passenger to myself, and upgrade the ticket to economy class.\"\n\nThis covers the domain, reason for call, and the specific order of requests. I haven't provided personal details yet, but the prompt says \"Disclose information progressively. Wait for the agent to ask for specific information before providing it.\" However, usually, one might give their name or ID right away, but strictly following the \"progressive disclosure\" rule suggests waiting unless necessary. But often in these simulations, stating the intent is enough for the first turn. Let's stick to the core requests first.\n\nWait, looking at the instruction \"Mention all three things at once and in this order.\"\nIt doesn't explicitly say \"Don't give your name\". But \"Disclose information progressively\" implies I shouldn't dump everything.\nHowever, usually, a greeting + the main issue is standard.\nLet's just state the requests.\n\nResponse: \"Hi, I'm calling regarding my upcoming trip from New York to Chicago. I would like to add 3 checked bags, change the passenger to myself, and upgrade it to economy class.\"\n\nThis seems correct. It sets up the context. I will wait for the agent to ask for the ID or name if needed, or handle payment/birthday issues when they come up later.\n\nOne check: \"change the passenger to yourself\". Since I am Omar Rossi, I should probably imply that the booking was under someone else's name or just make the request. The instruction says \"change the passenger to yourself\". I will use that phrasing.\n\nFinal Polish:\n\"Hi, I'm calling about my upcoming trip from New York to Chicago. I want to add 3 checked bags, change the passenger to myself, and upgrade it to economy class.\"\n\nThis matches the requirements perfectly.",
+          "format": "unknown",
+          "index": 0
+         }
+        ],
+        "reasoning_content": "The user is acting as a customer service representative.\nI need to act as the customer, Omar Rossi.\nMy goal is to contact the airline regarding an upcoming trip from New York to Chicago.\nI need to request three specific things in this order:\n1. Add 3 checked bags.\n2. Change the passenger to myself (Omar Rossi).\n3. Upgrade to economy class.\n\nI should mention all three at once.\nI have known info: Name is Omar Rossi, User ID is omar_rossi_1241.\nTask instructions: Prefer gift card payment, prefer not to provide birthday because it's in the profile.\n\nCurrent turn: The agent asked \"How can I help you today?\".\nI should state my requests immediately as per the instruction \"Mention all three things at once and in this order.\"\n\nDrafting response:\n\"Hi, I'm calling about my upcoming trip from New York to Chicago. I'd like to add 3 checked bags, change the passenger to myself, and upgrade the ticket to economy class.\"\n\nThis covers the domain, reason for call, and the specific order of requests. I haven't provided personal details yet, but the prompt says \"Disclose information progressively. Wait for the agent to ask for specific information before providing it.\" However, usually, one might give their name or ID right away, but strictly following the \"progressive disclosure\" rule suggests waiting unless necessary. But often in these simulations, stating the intent is enough for the first turn. Let's stick to the core requests first.\n\nWait, looking at the instruction \"Mention all three things at once and in this order.\"\nIt doesn't explicitly say \"Don't give your name\". But \"Disclose information progressively\" implies I shouldn't dump everything.\nHowever, usually, a greeting + the main issue is standard.\nLet's just state the requests.\n\nResponse: \"Hi, I'm calling regarding my upcoming trip from New York to Chicago. I would like to add 3 checked bags, change the passenger to myself, and upgrade it to economy class.\"\n\nThis seems correct. It sets up the context. I will wait for the agent to ask for the ID or name if needed, or handle payment/birthday issues when they come up later.\n\nOne check: \"change the passenger to yourself\". Since I am Omar Rossi, I should probably imply that the booking was under someone else's name or just make the request. The instruction says \"change the passenger to yourself\". I will use that phrasing.\n\nFinal Polish:\n\"Hi, I'm calling about my upcoming trip from New York to Chicago. I want to add 3 checked bags, change the passenger to myself, and upgrade it to economy class.\"\n\nThis matches the requirements perfectly."
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "stop"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 617,
+     "prompt_tokens": 438,
+     "total_tokens": 1055,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 577,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost": 0.00009335,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.00009335,
+      "upstream_inference_prompt_cost": 0.00001314,
+      "upstream_inference_completions_cost": 0.00008021
+     }
+    },
+    "provider": "Alibaba",
+    "service_tier": null
+   },
+   "generation_time_seconds": null,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "role": "assistant",
+   "content": "{\"message\":\"Please provide your user ID and reservation ID so I can review your booking. If you don’t know the reservation ID, I can help locate it using your user ID.\"}",
+   "tool_calls": null,
+   "is_audio": false,
+   "turn_idx": 2,
+   "timestamp": "2026-10-27T18:23:02.905571",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 42,
+    "prompt_tokens": 3312
+   },
+   "raw_data": {
+    "id": "gen-1793143381-HZwf7GvB48OIeZnzVOvs",
+    "created": 1793143381,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+       "content": "{\"message\":\"Please provide your user ID and reservation ID so I can review your booking. If you don’t know the reservation ID, I can help locate it using your user ID.\"}",
+       "role": "assistant",
+       "tool_calls": null,
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 42,
+     "prompt_tokens": 3312,
+     "total_tokens": 3354,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 3254,
+      "cache_write_tokens": 55,
+      "video_tokens": 0
+     },
+     "cost": 0.0008889,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0008889,
+      "upstream_inference_prompt_cost": 0.0004689,
+      "upstream_inference_completions_cost": 0.00042
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 1.7871689840001181,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "role": "user",
+   "content": "My user ID is omar_rossi_1241. I don't have the reservation ID handy, so could you please look it up using my user ID?",
+   "tool_calls": null,
+   "is_audio": false,
+   "turn_idx": 3,
+   "timestamp": "2026-10-27T18:23:08.509927",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 523,
+    "prompt_tokens": 523
+   },
+   "raw_data": {
+    "id": "gen-1793143382-fow7hEPM1AvYHjhXFgC8",
+    "created": 1793143382,
+    "model": "qwen/qwen3.7-flash",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+       "content": "My user ID is omar_rossi_1241. I don't have the reservation ID handy, so could you please look it up using my user ID?",
+       "role": "assistant",
+       "tool_calls": null,
+       "function_call": null,
+       "reasoning_content": "The user is asking for my User ID and Reservation ID.\nI have the User ID in my known info: `omar_rossi_1241`.\nI do not have a Reservation ID provided in the scenario instructions.\nAccording to the system prompt, I should \"Disclose information progressively\" and \"Never make up or hallucinate information\".\nHowever, the agent asked for it. If I don't know it, I should state that. The agent's message even suggests they can help locate it using the user ID if I don't know the reservation ID.\n\nSo, I will provide my User ID (`omar_rossi_1241`) and mention that I don't have the reservation ID handy, asking them to look it up as suggested.\n\nWait, looking at the task instructions again:\n- Add 3 checked bags\n- Change passenger to myself\n- Upgrade to economy class\n- Mention all three things at once (Already done in previous turn).\n- Prefer gift card payment.\n- Birthday is in profile, prefer not to provide it.\n\nCurrent step: Provide User ID. Do not provide Reservation ID because I don't have it.\n\nResponse plan:\n1. State User ID: omar_rossi_1241.\n2. State I don't have the reservation ID.\n3. Ask them to find it using the user ID.\n\nLet's refine the response to be natural.\n\"My user ID is omar_rossi_1241. I don't have the reservation ID with me right now, so could you please look it up using my user ID?\"\n\nThis fits the guidelines. I am disclosing the user ID. I am not making up a reservation ID. I am following the flow.\n\nOne detail: The prompt says \"Mention all three things at once and in this order.\" I did that in the first turn. Now I just need to handle the authentication request.\n\nFinal check on constraints:\n- Domain: airline\n- Name: Omar Rossi (Known)\n- User ID: omar_rossi_1241 (Known)\n- Payment preference: Gift card (Not needed yet, but good to keep in mind).\n- Birthday: In profile (Not needed yet).\n\nOkay, proceeding with providing the User ID.\n",
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": "The user is asking for my User ID and Reservation ID.\nI have the User ID in my known info: `omar_rossi_1241`.\nI do not have a Reservation ID provided in the scenario instructions.\nAccording to the system prompt, I should \"Disclose information progressively\" and \"Never make up or hallucinate information\".\nHowever, the agent asked for it. If I don't know it, I should state that. The agent's message even suggests they can help locate it using the user ID if I don't know the reservation ID.\n\nSo, I will provide my User ID (`omar_rossi_1241`) and mention that I don't have the reservation ID handy, asking them to look it up as suggested.\n\nWait, looking at the task instructions again:\n- Add 3 checked bags\n- Change passenger to myself\n- Upgrade to economy class\n- Mention all three things at once (Already done in previous turn).\n- Prefer gift card payment.\n- Birthday is in profile, prefer not to provide it.\n\nCurrent step: Provide User ID. Do not provide Reservation ID because I don't have it.\n\nResponse plan:\n1. State User ID: omar_rossi_1241.\n2. State I don't have the reservation ID.\n3. Ask them to find it using the user ID.\n\nLet's refine the response to be natural.\n\"My user ID is omar_rossi_1241. I don't have the reservation ID with me right now, so could you please look it up using my user ID?\"\n\nThis fits the guidelines. I am disclosing the user ID. I am not making up a reservation ID. I am following the flow.\n\nOne detail: The prompt says \"Mention all three things at once and in this order.\" I did that in the first turn. Now I just need to handle the authentication request.\n\nFinal check on constraints:\n- Domain: airline\n- Name: Omar Rossi (Known)\n- User ID: omar_rossi_1241 (Known)\n- Payment preference: Gift card (Not needed yet, but good to keep in mind).\n- Birthday: In profile (Not needed yet).\n\nOkay, proceeding with providing the User ID.\n",
+        "reasoning_details": [
+         {
+          "type": "reasoning.text",
+          "text": "The user is asking for my User ID and Reservation ID.\nI have the User ID in my known info: `omar_rossi_1241`.\nI do not have a Reservation ID provided in the scenario instructions.\nAccording to the system prompt, I should \"Disclose information progressively\" and \"Never make up or hallucinate information\".\nHowever, the agent asked for it. If I don't know it, I should state that. The agent's message even suggests they can help locate it using the user ID if I don't know the reservation ID.\n\nSo, I will provide my User ID (`omar_rossi_1241`) and mention that I don't have the reservation ID handy, asking them to look it up as suggested.\n\nWait, looking at the task instructions again:\n- Add 3 checked bags\n- Change passenger to myself\n- Upgrade to economy class\n- Mention all three things at once (Already done in previous turn).\n- Prefer gift card payment.\n- Birthday is in profile, prefer not to provide it.\n\nCurrent step: Provide User ID. Do not provide Reservation ID because I don't have it.\n\nResponse plan:\n1. State User ID: omar_rossi_1241.\n2. State I don't have the reservation ID.\n3. Ask them to find it using the user ID.\n\nLet's refine the response to be natural.\n\"My user ID is omar_rossi_1241. I don't have the reservation ID with me right now, so could you please look it up using my user ID?\"\n\nThis fits the guidelines. I am disclosing the user ID. I am not making up a reservation ID. I am following the flow.\n\nOne detail: The prompt says \"Mention all three things at once and in this order.\" I did that in the first turn. Now I just need to handle the authentication request.\n\nFinal check on constraints:\n- Domain: airline\n- Name: Omar Rossi (Known)\n- User ID: omar_rossi_1241 (Known)\n- Payment preference: Gift card (Not needed yet, but good to keep in mind).\n- Birthday: In profile (Not needed yet).\n\nOkay, proceeding with providing the User ID.\n",
+          "format": "unknown",
+          "index": 0
+         }
+        ],
+        "reasoning_content": "The user is asking for my User ID and Reservation ID.\nI have the User ID in my known info: `omar_rossi_1241`.\nI do not have a Reservation ID provided in the scenario instructions.\nAccording to the system prompt, I should \"Disclose information progressively\" and \"Never make up or hallucinate information\".\nHowever, the agent asked for it. If I don't know it, I should state that. The agent's message even suggests they can help locate it using the user ID if I don't know the reservation ID.\n\nSo, I will provide my User ID (`omar_rossi_1241`) and mention that I don't have the reservation ID handy, asking them to look it up as suggested.\n\nWait, looking at the task instructions again:\n- Add 3 checked bags\n- Change passenger to myself\n- Upgrade to economy class\n- Mention all three things at once (Already done in previous turn).\n- Prefer gift card payment.\n- Birthday is in profile, prefer not to provide it.\n\nCurrent step: Provide User ID. Do not provide Reservation ID because I don't have it.\n\nResponse plan:\n1. State User ID: omar_rossi_1241.\n2. State I don't have the reservation ID.\n3. Ask them to find it using the user ID.\n\nLet's refine the response to be natural.\n\"My user ID is omar_rossi_1241. I don't have the reservation ID with me right now, so could you please look it up using my user ID?\"\n\nThis fits the guidelines. I am disclosing the user ID. I am not making up a reservation ID. I am following the flow.\n\nOne detail: The prompt says \"Mention all three things at once and in this order.\" I did that in the first turn. Now I just need to handle the authentication request.\n\nFinal check on constraints:\n- Domain: airline\n- Name: Omar Rossi (Known)\n- User ID: omar_rossi_1241 (Known)\n- Payment preference: Gift card (Not needed yet, but good to keep in mind).\n- Birthday: In profile (Not needed yet).\n\nOkay, proceeding with providing the User ID.\n"
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "stop"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 523,
+     "prompt_tokens": 523,
+     "total_tokens": 1046,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 484,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost": 0.00008368,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.00008368,
+      "upstream_inference_prompt_cost": 0.00001569,
+      "upstream_inference_completions_cost": 0.00006799
+     }
+    },
+    "provider": "Alibaba",
+    "service_tier": null
+   },
+   "generation_time_seconds": null,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "tool_calls": [
+    {
+     "id": "call_DXSQLPKs9991zoQ6Fz36PHFp",
+     "name": "get_user_details",
+     "arguments": {
+      "user_id": "omar_rossi_1241"
+     },
+     "requestor": "assistant"
+    }
+   ],
+   "is_audio": false,
+   "turn_idx": 4,
+   "timestamp": "2026-10-27T18:23:09.852722",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 26,
+    "prompt_tokens": 3393
+   },
+   "raw_data": {
+    "id": "gen-1793143388-hGPYHkDzF3dfqDcIBmBH",
+    "created": 1793143388,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+       "content": null,
+       "role": "assistant",
+       "tool_calls": [
+        {
+         "index": 0,
+         "function": {
+          "arguments": "{\"user_id\":\"omar_rossi_1241\"}",
+          "name": "get_user_details"
+         },
+         "id": "call_DXSQLPKs9991zoQ6Fz36PHFp",
+         "type": "function"
+        }
+       ],
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 26,
+     "prompt_tokens": 3393,
+     "total_tokens": 3419,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 3309,
+      "cache_write_tokens": 81,
+      "video_tokens": 0
+     },
+     "cost": 0.0007994,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0007994,
+      "upstream_inference_prompt_cost": 0.0005394,
+      "upstream_inference_completions_cost": 0.00026
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 1.3372844640000494,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "id": "call_DXSQLPKs9991zoQ6Fz36PHFp",
+   "role": "tool",
+   "content": "{\"user_id\": \"omar_rossi_1241\", \"name\": {\"first_name\": \"Omar\", \"last_name\": \"Rossi\"}, \"address\": {\"address1\": \"901 Pine Lane\", \"address2\": \"Suite 360\", \"city\": \"Houston\", \"country\": \"USA\", \"state\": \"TX\", \"zip\": \"77271\"}, \"email\": \"omar.rossi5980@example.com\", \"dob\": \"1970-06-06\", \"payment_methods\": {\"gift_card_8190333\": {\"source\": \"gift_card\", \"id\": \"gift_card_8190333\", \"amount\": 280.0}, \"credit_card_6754990\": {\"source\": \"credit_card\", \"id\": \"credit_card_6754990\", \"brand\": \"mastercard\", \"last_four\": \"3848\"}, \"certificate_8390038\": {\"source\": \"certificate\", \"id\": \"certificate_8390038\", \"amount\": 150.0}, \"certificate_1778167\": {\"source\": \"certificate\", \"id\": \"certificate_1778167\", \"amount\": 250.0}, \"gift_card_6490722\": {\"source\": \"gift_card\", \"id\": \"gift_card_6490722\", \"amount\": 127.0}, \"credit_card_7407366\": {\"source\": \"credit_card\", \"id\": \"credit_card_7407366\", \"brand\": \"visa\", \"last_four\": \"6437\"}}, \"saved_passengers\": [{\"first_name\": \"Liam\", \"last_name\": \"Lee\", \"dob\": \"1989-08-12\"}], \"membership\": \"gold\", \"reservations\": [\"UM3OG5\", \"5RJ7UH\", \"FQ8APE\", \"QKRY03\"]}",
+   "requestor": "assistant",
+   "error": false,
+   "turn_idx": 5,
+   "timestamp": "2026-10-27T18:23:09.853000"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "tool_calls": [
+    {
+     "id": "call_jfVvJrHJ6Cfxw3vHkgJgOnkH",
+     "name": "get_reservation_details",
+     "arguments": {
+      "reservation_id": "UM3OG5"
+     },
+     "requestor": "assistant"
+    }
+   ],
+   "is_audio": false,
+   "turn_idx": 6,
+   "timestamp": "2026-10-27T18:23:11.602043",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 24,
+    "prompt_tokens": 3816
+   },
+   "raw_data": {
+    "id": "gen-1793143389-BKoJaumxHp3qQFwd7fhh",
+    "created": 1793143389,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+       "content": null,
+       "role": "assistant",
+       "tool_calls": [
+        {
+         "index": 0,
+         "function": {
+          "arguments": "{\"reservation_id\":\"UM3OG5\"}",
+          "name": "get_reservation_details"
+         },
+         "id": "call_jfVvJrHJ6Cfxw3vHkgJgOnkH",
+         "type": "function"
+        }
+       ],
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 24,
+     "prompt_tokens": 3816,
+     "total_tokens": 3840,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 3390,
+      "cache_write_tokens": 423,
+      "video_tokens": 0
+     },
+     "cost": 0.0016425,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0016425,
+      "upstream_inference_prompt_cost": 0.0014025,
+      "upstream_inference_completions_cost": 0.00024
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 1.7433689340000456,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "id": "call_jfVvJrHJ6Cfxw3vHkgJgOnkH",
+   "role": "tool",
+   "content": "{\"reservation_id\": \"UM3OG5\", \"user_id\": \"omar_rossi_1241\", \"origin\": \"SEA\", \"destination\": \"DFW\", \"flight_type\": \"round_trip\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT113\", \"origin\": \"SEA\", \"destination\": \"DFW\", \"date\": \"2024-05-26\", \"price\": 117}, {\"flight_number\": \"HAT282\", \"origin\": \"DFW\", \"destination\": \"ATL\", \"date\": \"2024-05-28\", \"price\": 140}, {\"flight_number\": \"HAT239\", \"origin\": \"ATL\", \"destination\": \"SEA\", \"date\": \"2024-05-28\", \"price\": 158}], \"passengers\": [{\"first_name\": \"Omar\", \"last_name\": \"Rossi\", \"dob\": \"1970-06-06\"}, {\"first_name\": \"Liam\", \"last_name\": \"Lee\", \"dob\": \"1989-08-12\"}], \"payment_history\": [{\"payment_id\": \"gift_card_8190333\", \"amount\": 830}], \"created_at\": \"2024-05-08T14:32:07\", \"total_baggages\": 0, \"nonfree_baggages\": 0, \"insurance\": \"no\", \"status\": null}",
+   "requestor": "assistant",
+   "error": false,
+   "turn_idx": 7,
+   "timestamp": "2026-10-27T18:23:11.602301"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "tool_calls": [
+    {
+     "id": "call_RYYo7f9UgBWHcITUvgMkcnyH",
+     "name": "get_reservation_details",
+     "arguments": {
+      "reservation_id": "5RJ7UH"
+     },
+     "requestor": "assistant"
+    }
+   ],
+   "is_audio": false,
+   "turn_idx": 8,
+   "timestamp": "2026-10-27T18:23:23.125434",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 24,
+    "prompt_tokens": 4153
+   },
+   "raw_data": {
+    "id": "gen-1793143391-AucYT3r89Tf9QLCB5YRY",
+    "created": 1793143391,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+       "content": null,
+       "role": "assistant",
+       "tool_calls": [
+        {
+         "index": 0,
+         "function": {
+          "arguments": "{\"reservation_id\":\"5RJ7UH\"}",
+          "name": "get_reservation_details"
+         },
+         "id": "call_RYYo7f9UgBWHcITUvgMkcnyH",
+         "type": "function"
+        }
+       ],
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 24,
+     "prompt_tokens": 4153,
+     "total_tokens": 4177,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 3813,
+      "cache_write_tokens": 337,
+      "video_tokens": 0
+     },
+     "cost": 0.0014698,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0014698,
+      "upstream_inference_prompt_cost": 0.0012298,
+      "upstream_inference_completions_cost": 0.00024
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 11.499004643000035,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "id": "call_RYYo7f9UgBWHcITUvgMkcnyH",
+   "role": "tool",
+   "content": "{\"reservation_id\": \"5RJ7UH\", \"user_id\": \"omar_rossi_1241\", \"origin\": \"LAX\", \"destination\": \"SFO\", \"flight_type\": \"round_trip\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT034\", \"origin\": \"LAX\", \"destination\": \"SFO\", \"date\": \"2024-05-26\", \"price\": 165}, {\"flight_number\": \"HAT163\", \"origin\": \"SFO\", \"destination\": \"LAX\", \"date\": \"2024-05-29\", \"price\": 190}], \"passengers\": [{\"first_name\": \"Omar\", \"last_name\": \"Rossi\", \"dob\": \"1970-06-06\"}, {\"first_name\": \"Isabella\", \"last_name\": \"Anderson\", \"dob\": \"1956-06-24\"}], \"payment_history\": [{\"payment_id\": \"credit_card_7407366\", \"amount\": 710}], \"created_at\": \"2024-05-11T02:58:29\", \"total_baggages\": 1, \"nonfree_baggages\": 0, \"insurance\": \"no\", \"status\": null}",
+   "requestor": "assistant",
+   "error": false,
+   "turn_idx": 9,
+   "timestamp": "2026-10-27T18:23:23.125735"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "tool_calls": [
+    {
+     "id": "call_4u5yFV0TDLmyMKGGKNRVclG1",
+     "name": "get_reservation_details",
+     "arguments": {
+      "reservation_id": "FQ8APE"
+     },
+     "requestor": "assistant"
+    }
+   ],
+   "is_audio": false,
+   "turn_idx": 10,
+   "timestamp": "2026-10-27T18:23:24.549884",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 24,
+    "prompt_tokens": 4456
+   },
+   "raw_data": {
+    "id": "gen-1793143403-fQWTDnVpLem6fhrDByP9",
+    "created": 1793143403,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+       "content": null,
+       "role": "assistant",
+       "tool_calls": [
+        {
+         "index": 0,
+         "function": {
+          "arguments": "{\"reservation_id\":\"FQ8APE\"}",
+          "name": "get_reservation_details"
+         },
+         "id": "call_4u5yFV0TDLmyMKGGKNRVclG1",
+         "type": "function"
+        }
+       ],
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 24,
+     "prompt_tokens": 4456,
+     "total_tokens": 4480,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 4150,
+      "cache_write_tokens": 303,
+      "video_tokens": 0
+     },
+     "cost": 0.0014185,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0014185,
+      "upstream_inference_prompt_cost": 0.0011785,
+      "upstream_inference_completions_cost": 0.00024
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 1.4187096779999138,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "id": "call_4u5yFV0TDLmyMKGGKNRVclG1",
+   "role": "tool",
+   "content": "{\"reservation_id\": \"FQ8APE\", \"user_id\": \"omar_rossi_1241\", \"origin\": \"EWR\", \"destination\": \"ORD\", \"flight_type\": \"one_way\", \"cabin\": \"basic_economy\", \"flights\": [{\"flight_number\": \"HAT056\", \"origin\": \"EWR\", \"destination\": \"IAH\", \"date\": \"2024-05-25\", \"price\": 71}, {\"flight_number\": \"HAT138\", \"origin\": \"IAH\", \"destination\": \"ORD\", \"date\": \"2024-05-25\", \"price\": 60}], \"passengers\": [{\"first_name\": \"Ivan\", \"last_name\": \"Garcia\", \"dob\": \"1960-12-01\"}], \"payment_history\": [{\"payment_id\": \"gift_card_8190333\", \"amount\": 161}], \"created_at\": \"2024-05-01T16:18:10\", \"total_baggages\": 0, \"nonfree_baggages\": 0, \"insurance\": \"yes\", \"status\": null}",
+   "requestor": "assistant",
+   "error": false,
+   "turn_idx": 11,
+   "timestamp": "2026-10-27T18:23:24.550110"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "tool_calls": [
+    {
+     "id": "call_URjbv3XQ6MCTmCegrYAVv551",
+     "name": "search_direct_flight",
+     "arguments": {
+      "origin": "EWR",
+      "destination": "IAH",
+      "date": "2024-05-25"
+     },
+     "requestor": "assistant"
+    }
+   ],
+   "is_audio": false,
+   "turn_idx": 12,
+   "timestamp": "2026-10-27T18:23:28.816897",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 76,
+    "prompt_tokens": 4731
+   },
+   "raw_data": {
+    "id": "gen-1793143404-dXS7zsvS65EXaR7RAwJp",
+    "created": 1793143404,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+       "content": null,
+       "role": "assistant",
+       "tool_calls": [
+        {
+         "index": 0,
+         "function": {
+          "arguments": "{\"origin\":\"EWR\",\"destination\":\"IAH\",\"date\":\"2024-05-25\"}",
+          "name": "search_direct_flight"
+         },
+         "id": "call_URjbv3XQ6MCTmCegrYAVv551",
+         "type": "function"
+        }
+       ],
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+         {
+          "type": "reasoning.encrypted",
+          "data": "gAAAAABq4TJw81ux9WB8Rfa8kgq3N2raHYEnZw1_LqayymsuHGnJsmyC_8P8mJMZI76YrY_SX6zTWlLgx_C7XWZfkrCm7hqOjYLByWW4zZSG4NIw7Q9vR1audWetnnExjLLQFHprgaiYyoIjEsUOmR5jLweQeNqhCCtNieFjS69tDmS8rc4M6rwQP0Zxlnu78XGY7k6GWn2eFqjMY_2ZA_foMvFUBC1w36RV1AUyAUoi9jsPuDyZS5x8EmlDeaFuuHs-sWyf9Le2hN8Z6mS7O-NeQS_YF77JUQm3Ys4Jj04Hoc_jLN6rX78A4-TIud80PCBbKEd-AWmXgmRGedyIYFjlTpd2HmseZnoGFRTyGrKeon4DGI-gLIfzCW1MaRffhwAv8Wqna-Sk-4eSHeAPc86VKT1MEicsmozPqsUcxppGDSuaOqAUjjLrTA-b4l44CXJ4zPeAVBr7jrFD-SvP6coy4uTWd6ngzt3y54x5hIM5Nt38dAo2feS2EMVoPBqQtKsHqUX8V-L6yivbgtDsppFBmZTKQ5g7mtJpyPGVPpVzZB-uL34eFTdLhmo-Z5cuNdQwj7In1uBoROWoqXg43agL4U8ushNi7-Gd2a3UrensARbofB8aXSX_UxcjsXLhHE4WqS6UILQGy0TkJlZrw0pYxkQbI5IA25zd5LyX-HAhYIxVJ9pt374zuTiBbI06OssIqZ_P9ZCqTlQoBDDiBfcezSRuOOwyYD2JjVdIataUKlUfX7lx1W7zfU1RWdYWFDECaMDLc3SKwVgOZ3D8GrEBtroUpi_e6T4QzFUmfWNd_nZeiMYhYLc0UrXxHwIJDIfDvTdiQbt0oBWNjYvhNC9fS3Hwfk0uJ9i7PG4Cts_P5uTdl6DdHtCE1enwsLR5PMX65S3HHsIbQyoGVIu01zJXMP8fsngL0IS9QU9M2904wv8ZFc03dwQLygv9fQTs8-tqjnetEMDPz5rh9kAgXktMukJeRNKOth_HqRVKkzgLvc5RykwHDxyJHI2CTNoBr-geWH9UGPgEckz7818W-4a1f7S1MGRQ0EmQ9K42u0N3Q7IBBNGK9H5yqqE0mQ3bMGI1YDwzopjCqxBdES3UTHHFlAUed1fPIwVwrvw7mOKPMNtjFpfv6SZB8_mkCJUkfOxsHVhajgkiZh8BrC6cMaScXc2KpCjICBISr7iB0nT-W_OisaB7lJlQ5ZHJf6bgTA94z91EflOeGOYPWrh73UB9wnxM75c-Gnjz-ui5YMxtcjZQsN27fDTrGXE_dtIJohQlYXCfBTXmn5GkRoWVxqeQWVXLJ_X-Myf_iH5MYPbIps1WciaK2vqTzXWGXAaUeeMOhMz66oYK-Ex1EkrN_WGkwXNFSVOqeKee3ZwzH8Gtg6jMUdRSVtTDDDvjMln-qkeaxDHJza6v_ok94_onAB70RZlZOT671loERIcu2IW44U7eW00GsiHM8PBq_DTtlUKBbXcp1ISlnIrJtSUQf2qMaiIoSC1nlPHfAbNZ6XoyrELe-bt8TFCC_EeEHGyxGHW9SjYA9vKX4kP3u-d5MyJ9mMIXOlD1U49X4o8OMTd0AdP-wuY9Ta-EUSd8i3hoWyqqPKRDwynTAPkYmANJImuzRsLr20BM9taYoZmsIgtAKuIyzcEmAEWinA2kK9v9mGzUYZmkArFXKLPrCOjGpmIdwEDFBoQEzwIQauf1LyXqq7JIMdnyjF3sf9BUQDqVJsUAF8zPRrNxWF4_WP2RfV1avd1ViPMGPRmPU0ngLrAYKxsV9hu0Kp7BpMqHRjPdz5-bG2fGiZfFmuGW5-2HdBhPfnwqSjE8gU0OFDiU3Z6Wx6fHtAqShycW3j2_9-Ew69A3SO2w58PeyChYrxWy46eNrAGVfTLAwwuEOdVE2tmvxE9M3BzegogCMmiwXEsA-GYzBRKKvbRy7qWS-Zxt4lf_CmdzxLZKkWeVBP4tw3jNWE6zVaNEU1BRQx8MtvvUEWM3V0a1C9T7RToLjTdmsaSe1_b8BkuFrK_J3rryARKppWjqVHh_bInl_9TDhPJz7O3QaIqkA4nE-csXr4rBJ0B1wX0pP-OYgir_NaZdFQzaZf3nepLn7GEJdr4PYwBp0Li7HDRpyrJn.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LjEtc29sLTIwMjYwOTI5fG9wZW5haSJ9",
+          "format": "openai-responses-v1",
+          "id": "rs_008b31071d79971f016ae1326e47c087d198050cfc2406c9be",
+          "index": 0
+         }
+        ]
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 76,
+     "prompt_tokens": 4731,
+     "total_tokens": 4807,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 39,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 4453,
+      "cache_write_tokens": 275,
+      "video_tokens": 0
+     },
+     "cost": 0.0018988,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0018988,
+      "upstream_inference_prompt_cost": 0.0011388,
+      "upstream_inference_completions_cost": 0.00076
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 4.261860966000086,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "id": "call_URjbv3XQ6MCTmCegrYAVv551",
+   "role": "tool",
+   "content": "[{\"flight_number\": \"HAT056\", \"origin\": \"EWR\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"06:00:00\", \"scheduled_arrival_time_est\": \"09:00:00\", \"date\": null, \"available_seats\": {\"basic_economy\": 10, \"economy\": 15, \"business\": 12}, \"prices\": {\"basic_economy\": 84, \"economy\": 155, \"business\": 320}}, {\"flight_number\": \"HAT166\", \"origin\": \"EWR\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"06:00:00\", \"scheduled_arrival_time_est\": \"09:00:00\", \"date\": null, \"available_seats\": {\"basic_economy\": 4, \"economy\": 17, \"business\": 15}, \"prices\": {\"basic_economy\": 78, \"economy\": 104, \"business\": 477}}, {\"flight_number\": \"HAT179\", \"origin\": \"EWR\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"05:00:00\", \"scheduled_arrival_time_est\": \"08:00:00\", \"date\": null, \"available_seats\": {\"basic_economy\": 8, \"economy\": 10, \"business\": 12}, \"prices\": {\"basic_economy\": 66, \"economy\": 114, \"business\": 458}}, {\"flight_number\": \"HAT188\", \"origin\": \"EWR\", \"destination\": \"IAH\", \"status\": \"available\", \"scheduled_departure_time_est\": \"02:00:00\", \"scheduled_arrival_time_est\": \"05:00:00\", \"date\": null, \"available_seats\": {\"basic_economy\": 15, \"economy\": 13, \"business\": 17}, \"prices\": {\"basic_economy\": 72, \"economy\": 117, \"business\": 242}}]",
+   "requestor": "assistant",
+   "error": false,
+   "turn_idx": 13,
+   "timestamp": "2026-10-27T18:23:28.817371"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "tool_calls": [
+    {
+     "id": "call_jpnQ1pQ5lYq4h2gGqO45dXwZ",
+     "name": "search_direct_flight",
+     "arguments": {
+      "origin": "IAH",
+      "destination": "ORD",
+      "date": "2024-05-25"
+     },
+     "requestor": "assistant"
+    }
+   ],
+   "is_audio": false,
+   "turn_idx": 14,
+   "timestamp": "2026-10-27T18:23:30.413839",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 34,
+    "prompt_tokens": 5237
+   },
+   "raw_data": {
+    "id": "gen-1793143408-OLdIu2oquuoLAnQf0ELv",
+    "created": 1793143408,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+       "content": null,
+       "role": "assistant",
+       "tool_calls": [
+        {
+         "index": 0,
+         "function": {
+          "arguments": "{\"origin\":\"IAH\",\"destination\":\"ORD\",\"date\":\"2024-05-25\"}",
+          "name": "search_direct_flight"
+         },
+         "id": "call_jpnQ1pQ5lYq4h2gGqO45dXwZ",
+         "type": "function"
+        }
+       ],
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 34,
+     "prompt_tokens": 5237,
+     "total_tokens": 5271,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 4728,
+      "cache_write_tokens": 506,
+      "video_tokens": 0
+     },
+     "cost": 0.0020838,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0020838,
+      "upstream_inference_prompt_cost": 0.0017438,
+      "upstream_inference_completions_cost": 0.00034
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 1.591571561000137,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "id": "call_jpnQ1pQ5lYq4h2gGqO45dXwZ",
+   "role": "tool",
+   "content": "[{\"flight_number\": \"HAT044\", \"origin\": \"IAH\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"20:00:00\", \"scheduled_arrival_time_est\": \"22:30:00\", \"date\": null, \"available_seats\": {\"basic_economy\": 19, \"economy\": 12, \"business\": 20}, \"prices\": {\"basic_economy\": 73, \"economy\": 105, \"business\": 355}}, {\"flight_number\": \"HAT078\", \"origin\": \"IAH\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"01:00:00\", \"scheduled_arrival_time_est\": \"03:30:00\", \"date\": null, \"available_seats\": {\"basic_economy\": 13, \"economy\": 4, \"business\": 5}, \"prices\": {\"basic_economy\": 59, \"economy\": 154, \"business\": 334}}, {\"flight_number\": \"HAT116\", \"origin\": \"IAH\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"08:00:00\", \"scheduled_arrival_time_est\": \"10:30:00\", \"date\": null, \"available_seats\": {\"basic_economy\": 13, \"economy\": 5, \"business\": 0}, \"prices\": {\"basic_economy\": 55, \"economy\": 152, \"business\": 265}}, {\"flight_number\": \"HAT138\", \"origin\": \"IAH\", \"destination\": \"ORD\", \"status\": \"available\", \"scheduled_departure_time_est\": \"11:00:00\", \"scheduled_arrival_time_est\": \"13:30:00\", \"date\": null, \"available_seats\": {\"basic_economy\": 1, \"economy\": 18, \"business\": 7}, \"prices\": {\"basic_economy\": 83, \"economy\": 185, \"business\": 473}}]",
+   "requestor": "assistant",
+   "error": false,
+   "turn_idx": 15,
+   "timestamp": "2026-10-27T18:23:30.414303"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "tool_calls": [
+    {
+     "id": "call_Avkb8c2pDKoG5w0yUurGfuwe",
+     "name": "calculate",
+     "arguments": {
+      "expression": "155 + 185 - 71 - 60"
+     },
+     "requestor": "assistant"
+    }
+   ],
+   "is_audio": false,
+   "turn_idx": 16,
+   "timestamp": "2026-10-27T18:23:36.405010",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 169,
+    "prompt_tokens": 5738
+   },
+   "raw_data": {
+    "id": "gen-1793143410-2kAtiWbSZRn2aVBtq6Ve",
+    "created": 1793143410,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+       "content": null,
+       "role": "assistant",
+       "tool_calls": [
+        {
+         "index": 0,
+         "function": {
+          "arguments": "{\"expression\":\"155 + 185 - 71 - 60\"}",
+          "name": "calculate"
+         },
+         "id": "call_Avkb8c2pDKoG5w0yUurGfuwe",
+         "type": "function"
+        }
+       ],
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+         {
+          "type": "reasoning.encrypted",
+          "data": "gAAAAABq4TJ3z2c73EtdEveI5rRNmVBsdeXCjAUZ_ulZ19gH8RxI3ZuOcI0pKa5-OJxS6MxTn_pfhy-1E6Oenc3J5Nhc5UIk7eilp0HUSSGvKbhVlc56dFjTkoE9Kym-NuZ4iELFqXxWhRM7Xr2tHdMLaxrnS6Syl29GUCGdjsGUhTz3-EFgDCmrwL7WIThKANiheIPz-C4BLgRHy-JIjzL3u2aN18uIh4voyI5RNXKmTIDJOuNWkUzg8FvikQO-Sh9iXBExgVTCfq-ttE8N7ZWQ9qUDx5ix1vyIcSa1VwmflA5NiRqE3jHa9xB2HjvsPYpA1b14QO8ssBa1ozL3KnIamlscBdj3HDPozqomXHfcAWn_V3S-Bryvi7ABbaEz_Chrg689VZoZI6SCIclBNZXKIRKfU8M6jiyIlCeMicRjiwFtykPyvwP3igIplpYDTlKFWppAtOq9ADdm6oEheYjo2lHwKw4a5rx3Y76toFVHagDI2f1WMNeu7sF-8PKMtlIZA4gafm2bvWZP0ahV8HT5Wd_u5M55D3nCh0Gb4puGuTML9GWBZJ5IHq_qyRRp3t1o5DgUDLZE9TJGY-xUSH-CmpcRADcuwL6m5dohfqSl9KzRSXJbPFqi8IexgRM30YxbF7kFIlam-EEKBsY7LkXvsbXzhgWcuJwGoSmoWk8linBoVgjby94twRmwDcByn_VvdQ7RPYuTbif3befJ_jvKCU6_WhUE0ua-SPM_4b7B65xl_qEjMTXGHYWfN7EFOM283sHR8hlB7QdI6gJLbWIG2Af9NllkaBTkFDPEuf_NvMtiah-mBzlCs89V-REmBHuF72wqVowj7vsBfVpVTGjgoRzHQd58z2WQ9oDbMbvFLac94ohuFNWL8MFMck-a5nGfVPgl3djXCMv0PhLNf7ZTR1K2TNVzTiYzq6OEcQK9wr3kapj6qoY7xf40UrmI3QxKV7z4TacApiIeriNXmTQuOqF2KPEj7pIaSjKGpmuq_erol3EybEL5q92KPWApa2Adyr4Yiwyi1CJI7b-b2fHESuiEu1S0RMal0g7A1dd6sZy8h_zjYTIfo5gx1C05VtGPU5ADawcUUnkCgWFJXXU6Ag5u6nm1wccrnPSRIOEYFQ82_E3MEevz9TfbXjWNYY7UdG1vystVL6B9I-4KVAMbWH-pU1LdwIAbi548Dq95HYZ2NrB60hLZS86h0ixtqL_6vu9XxA677JTSs2ZgIzwMGl4OuYbE1nPtkazBu2WMjZp32_KS9_nY4qxkd-rjp6vrI7GDyYtfT9rnIU1MSkFJFLIyf97ZFbN7wVBH3kaPcjNY1RMmiqzWCkZs4lDk93tRs2Jyocs6Y4zasQz-Go5wWpvfaLESAwcBA3HafT5G9tkYyenD4gXblPL7U4dHS5zDI_rRMhUrtqqexIdkWpXRPpL0CcX5gb0hfmNpNtq5JcrNw9UBtq3Gy43Kg2RcNX7l2czSy5rIy25xk54FUp-VT7RozVCByY3p-X75V2v2JcUEZwlVgFN3_Pp4hxrfT8fNgtlMsgrJI0u3mxlkUfGO2ULDa-f_UmD8fqxYaIvBddsUgEatA7wqNoqbipc-A3CqTBAM3YUWRRRixLMlL24_bM8GpqSLPqBYWRwA8cCXWymiirvYsJC0dppC1pluIZWYQT6ydwvGFG0uxrbhf2kLhdlV7vNFnJMSkQrGe0MSM4s7dmJpCtnM9Fb0oIuMYEPOAwuNWAsU_ZM1oOPXUGM5XvKK2auqXPZMIw5uAODqIoNnIJsVKIflC0KzAsSdWPMKf5wySdDXvMJwCXs71FudwW41Ic503Mp8Xa2xkQ0x8lWE54i4nnlBTqHxx-KtoMaxen2vvz2HLCAHM-VHI5iTZqtujFPTsWKsJcTsPqDbBXNfTVRQkniNro_3lsrSeNOVOFwfXfhPOYugV0_lC1wZ0-XwCC1BuKXdO-bg9op3kYHRAPySi4Em0NRYU2JQdp1dbWwhdFygIJYEgqk23ib_cwmz87Ybe0FO9-WaEKIa0_EKVM10J3Hg-Cavc76VEP80sRCjSAE98DvsYQ0tKQ2iPJOW44x7aP_Xv2IJcl5KWgy9xJvielX3uct_O2-BvD0IfDrU3IkX3VxXPDnAn1CzUVM-IfutJoo5v24fxPl-aum1pZnl1lcRD4i_4vHv6IStcUeJkJ_8Hvwy6WlDQmSSBTScoACliMI4LdlTMwrwcVTsYq-0WfKEmrYGx7-cdjv9dx1J0ZM12S0Z_ACB6TmXI_xkt-OYdFf3JLdTAgWrX4YOWIQAI1xou06urdvL4DkC5sX1Y8YyInBgCGAYtGEpZcWNIdWsgEutWtzV-cwMDaneR1cBpLyAZa-qLbw4W-HQ5-bOUu1mxTTIFAwRf_Zttfw-M8SjFEWF0uV5NDzCpE1Tiitkp4KpiSfgQRretkIc2AHpttVoawJgEGq-NhoJ65QudNjdyyITbZ2eQpKEMMOoQf4LveeQ4C3uchAn8kqc1VubY-xSaf52d-vdzcQA96ql3UfmYtwKUwLh2H2h4aaLNm0tNKEBhTqt3h-ozVK2BWCdrTB2Jhs1AQcueZv-vw8b3hhcoJiV8tunAGsNRGRpQZRFUvAIgWfkASMtcdF6ibxO7vP1Bcb9gI6IRsiFDWRqtny8XbpTyGcxVEY3ke9xbJZqznGXIjx8hMON673AeokeyUAKpspFxWB9m0ULFK-82qT_5lSPt_SkcheBK8CZNlWm2sbcWscRO9PVmfDcjxgKXIUIy6LaVN-9r7WbZRsoL3eaXRMA9eiJvIUir37l_aYmBP6Ob6_ZCLldCWB_31tRPVQxYDL2rli6IQ18S747epCoOGJirAR2F4u_l5AsOC9RN74q0ZiFvqPq1z3WXwVnNzZtZ45q5dsbhATVLJXj9jodr-B9oqHmM19-DoDL44EfzK2nU488z2OT97l47YfjiYkoOOx2m_xQYgr0EzXmBckEH9MYKodE3i3SFteD9AUAFW2RQBZIm3WMuluvkNy-WsIM7x_aKkcgvGZPmwrFmuCMHJhVl8bNCe2i-4YpdFJQXn_lcje34FHfp9uZ90epZbsSaX1YTOhWzL1_eH7TfGwHaVinCniS3BCduWhRlRmXlerdhQ0u0xp7b9TH04k9vFYvjJOENUU__rNvEGEM_X2fxl4kBGS642yajlkkFiaw_48V1VwfbK2Dk81fk0v4DfdToXdHMXzUtbzIGS5vUVfGMlE_hrsEEwxV4Ny7txXs1psui_APZtgSxql-19GyPa2sfmX1N_I8bjmlepiki0c5s_8xZG8UTOiaIUWUjHFqo5ioBE4P-IpmJTFUXse0eLaYOM4VPgcdhOBFetZafgBDieuFr9Knif6hMEw4ShoIAvHRcD4go-iPsmKsiG1BFPwuW2Gd79ZLsN3LeHlX9IuU8S1fnUKjz1lsYBzIrTBpn9mVNSG0DWEzh2cokrh6yXYA7YXRHbCKhhHV1SSH99JBxswINoJMovhW1J8W0jWqhVs=.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LjEtc29sLTIwMjYwOTI5fG9wZW5haSJ9",
+          "format": "openai-responses-v1",
+          "id": "rs_003dd926edc7faf0016ae13273885887d1916bf5c28181b79d",
+          "index": 0
+         }
+        ]
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 169,
+     "prompt_tokens": 5738,
+     "total_tokens": 5907,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 141,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 5234,
+      "cache_write_tokens": 501,
+      "video_tokens": 0
+     },
+     "cost": 0.0034719,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0034719,
+      "upstream_inference_prompt_cost": 0.0017819,
+      "upstream_inference_completions_cost": 0.00169
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 5.985847966999927,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "id": "call_Avkb8c2pDKoG5w0yUurGfuwe",
+   "role": "tool",
+   "content": "209.0",
+   "requestor": "assistant",
+   "error": false,
+   "turn_idx": 17,
+   "timestamp": "2026-10-27T18:23:36.405260"
+  },
+  {
+   "role": "assistant",
+   "content": "{\n  \"message\": \"I found reservation FQ8APE for May 25, 2024, from Newark (EWR) to Chicago (ORD) via Houston (IAH). Please review the proposed changes:\",\n  \"changes\": [\n    \"Replace Ivan Garcia with Omar Rossi, date of birth June 6, 1970, using your profile details.\",\n    \"Upgrade both flights, HAT056 and HAT138, from basic economy to economy without changing the flights or date. The additional fare is $209.\",\n    \"Add 3 checked bags total. All 3 are free with your Gold membership in economy.\",\n    \"Keep your existing travel insurance.\"\n  ],\n  \"confirmation\": \"Please reply yes to confirm these changes and select a saved payment method for the $209: Mastercard ending 3848, Visa ending 6437, or gift card ending 0333 with a $280 balance.\"\n}",
+   "tool_calls": null,
+   "is_audio": false,
+   "turn_idx": 18,
+   "timestamp": "2026-10-27T18:23:47.718740",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 486,
+    "prompt_tokens": 5777
+   },
+   "raw_data": {
+    "id": "gen-1793143416-brSi8zMsnBRYt1DJNixf",
+    "created": 1793143416,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+       "content": "{\n  \"message\": \"I found reservation FQ8APE for May 25, 2024, from Newark (EWR) to Chicago (ORD) via Houston (IAH). Please review the proposed changes:\",\n  \"changes\": [\n    \"Replace Ivan Garcia with Omar Rossi, date of birth June 6, 1970, using your profile details.\",\n    \"Upgrade both flights, HAT056 and HAT138, from basic economy to economy without changing the flights or date. The additional fare is $209.\",\n    \"Add 3 checked bags total. All 3 are free with your Gold membership in economy.\",\n    \"Keep your existing travel insurance.\"\n  ],\n  \"confirmation\": \"Please reply yes to confirm these changes and select a saved payment method for the $209: Mastercard ending 3848, Visa ending 6437, or gift card ending 0333 with a $280 balance.\"\n}",
+       "role": "assistant",
+       "tool_calls": null,
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+         {
+          "type": "reasoning.encrypted",
+          "data": "gAAAAABq4TKBT6ci6LZ0tj3c4DEHlQ922mgf_crl2s-EduUJvA7XINhzt2VTwD1Vvsq4a-E8GPVd0bH76In1I7uiWQjQG61QnBOmJhM8N7hAnXP3WbEO9mTTldiDnMkYxXj6UuCyhWHS5u8AnWFTj8sC0EHCxfXQuOHubaNy3aZCO3vDdfqjq1Rgg3uphMjtdZkpv6S6OeifWZxuj0XlyhkyynNi7uzw1m6ZYM2kpH_rvrkAuyCoFBZTqnBJzaTiWE4ZSvPKI8n60qdQ4q_w842loDH-DOr6c2jFIHBKwRhTnGCgO-q5--EyWXKZp3-dSb86z7_twJTBF6C7Vzjd0pTXBaW0bNCnN2rDfkxhTrtEJgX_8oRC5_qTVcNfxgtz2yj7h0L9j5HIe5TWzv7PvsGDBnpBMioPsszwC7Br6PRk9qYldmAH2aZkdYoCQmOTQ-rCaQAWeZ5UWjs3t7brPw33-qFPHAmTqckh9NmJEgImlG_ef69tONsgqG5uq7-Y7BOtIzEPfkhEU-pM-iVavcdG35-g-DRfJ5Asxrb9QU5m2S3AHTxldVAX8gMPmVRCrj63_E2NK6bnLhGIkxLDlqYoSAQC_gZjUv07Fwvhs3AODvytAmr6JV_sbIySS4F-HPDbtpgQoHOFep6ttWGh1ENQX50Tw0xeDwqWrQukNS1qlgShNO96LLrNJgQxzX392gS-Q8gJXXDWOPAYYe7egXIoQ2xVkBnAQLT2rf_cNpoFFc7vbzoJfx4YEe4sPt0nmNmBJLrisWlKlgm9ZnfvciP220Ctelf3KrAMe5JqlAy-8m2ukfCnBXi63hbXAal2R9ZjTbAztiBdBxnLBNsLgrspJl14WXdOuGLzQbXP6iHscEZucokUofVXISVwKZ7zXXKLus8MhEWUcrrdg2-CVgXalWQvkvhwMjagsiMo-3RrZ9Y5K3tgNHnIE6KHZ-uJxsjcaI43pUM2DyVF08KVRA_W24uFXL8Npr_sgRjg5OSE0fxvsIDh5NLmmsCCJB82yLnXd_T8kIq3NmC6AmcS2QKG7ULYN53F13QLnyOzvo2Vb73bDpCz6AyH0qAa7jSxNYhhXSJ70GHhTH4InrGQtiRj--M5P7pM5IYzxuTFjn1ReWyMYym4fLeTMyKRMWKXAeNcpqw88IDG2pNbNUOheM5RQLqRCkbcWbHoKB-Df-l-CK9wLrBsDfldenElKnURzzBuK81bpx1Ktmrxck66Ac2GTy4wlg12Y30i3o5_SGT4Z0mF3lvIL3_3LY9NQAm56CeC0wiCKIticmKjSS9xXGb8BvOZkrbWlChyy55mbkgdTz-BJh0v-XvDYDdLsnAPdUgpCKntE6WsPYRJOZ_dct164XE1yrxXd4mb8mDCr6KiZ5SAeia_OUQn64APIFOqcMkyokvirtkw0Hpw0WJFWkpSgfO3-5ISNK9Lb_lShn6OdSMGMvQFCUhXffJHjnwDmfwsJiZQ3_Ve__p3HuKbvdQpihNqMcIJa08yzrHd7PCgGc5a-fZaxjTO-rNIWnlqzBY8eklMbyJAAAna6cwTy48zcJgHdvdlAHn8gdQXjA5hH5J_-xprOgr_YaIqQKW47r4cXAvhIFgHFwNXZmDfPYLpoKpAPYec-ZKabYfQoqrZ9Yk1_0KhjhXaEGL6uAvlN3RYsGerHWKXQbd4NvZ53Q3ibYVDuiWcDgU2cwK7mJ-VZpLKpE4yQQo4fa7eYiWgVgfFKq9fnUaw2r_a9eXpnylf9ZSvEIuqtUI6_nAdd9_85RXkktOuiwjltlm_u8VBMdbmYR_EjmKDQmb8EeK4PhMp9wudd6mFV7Cwq6pG1Vq4br2_0p4vTNV3kxNKKfwr8GWlTV45LO7H1brlmLXYXD40RcPUWcVMTFs43DR44F6Ql4WkvthMccChUQdydh7QsNocZugYux9kXCbhiYKYpsj8NE8d4_mWjWDzuXIyBJsspHiN7g1IbT8x-Ti9bRoTJqS2YSorGkbG5e79yN3XfjUpuyHhjkLZUO-deV9Sk9LEwtgXugqMAKEqsFLW9KVMnlgJpXcUck3b0hdYSiaorstlTWz8QcoZsA8UcKh69E0bp74apr2dMnmQZeVT-kRyviPAgPP_GePTQW3sBoMheLSn6YKm13tCc5sCTa4x1hGsoqWr6X0NmCzN7CJUW0eUcQxUWABClbweJl6VrmWWo0-og2qaaPaOld9Ayrl1ow7IIhOQEOIo-5aGBwftXi4pd-ucChtnGdLUCHjuqvbVrMqCLZaJppcC8V9i2PGZgE9cU-HdKXfDVer7uhckx1F_AQH5ZvLaBvP8sjWhO_mjhtFE747UUneMVix6IIS4B5_J9Hx1qc45AzhU9GYVn-8jOUu8G9_QGcTBqb7JHu92c7lvjy7L8hjkki9yeCUyvqablq1pcwHyWw0ARBQ5sUN3gCki3oW-1CmzduxcUy68tfMEfMMBd2mGJt41080FPfSDWGyXXEnd3-iQysDUy8jXx7mLpJ1ZOg4I5GKO7lJS6WDYbzH8rs4ekmpBGgIHspR9_r-W_-xYeXKjBJHrdGAx38kgyk9MuGdahWKcCdAvfoAJcBYjapQqog7TkDNn0mGels5ZnOvGIkv0OmrN11fYlLLSudls_jPCmEJ95HDEKEJ-_qt_Sjo_re1ypC_0V5kAwkSQafgU4HZJBMCU9myDDINEpVOUG5N22z_J85kvLcrENDaO53auhYYoYZPmcP4seNvBQNEMScttLHFi92IpFX8gNGDW5uZVbBq07kWrdsx8NiFcGsypnVIWmdr3xe_ENJJ6196lngkkxgTifJCIdtrx_eK0Vmd0O8zPz3eQ8xscw3SjRBjXerCbeh-72VPN18xjauWDiO6WKm7225GHYU37l70Df1H5CPLy0lQIS84Tzs8E4YmxES_8Ff5gb8l97EzmDmcUCz8XX4V6YzCRwwYiR9Swi1eUeVnRxoKKAqbBVaDWnjPdtDppdIO4j6Lth79xSq6GFZXxO4XHcUI4PtndrLa_rizBEguqGe8XCR9mICEqkKgTFCCM_wfs3jg6jzPXh8HaPTwEmr3Q8-i15V2v7VbGN4s0dNXQfY6KgWKxYQH-aF3xpu3v0QAb19Wr4lgBoVrDdDyw1FO6vcGOn3LTa2qbMfCPakBfASByYWy3zLZml6QU-EqPu7UbBJRulqXBUd0yONacgTL_hzSX5GUbpMlvoYjZdk3x48hrkUG-zjs6wCz0IHikWTj8pUl1WetfeAR5FxBTOszBudiH06jHPO_W74MolbdFDua579CbtSGGGEWI28HdwULfWADAWt9Ci8p2JEsUMkQw35gBkZuu_K3bNU3CEe0v0hMAFNswNyHuRKzcbtePjEqSXUAIclFuS3fCPLNxaLJU2WxHvYQTSwsYu2pKqSimS6vdmyGoLovxuXJnEGLOvtc1gP4_Yy9FexWIIbRbiO7iAPx7J0yGQvsVBQOu-WikbbeSVDMu1_-4Ip7tdvy88tYowtciNmsAYRruHsuwq8s63oaLVntq2ZyqWSzUU0DlXRXASY4UU5ROc1j4wgSTCl3YMIytkAOyK4U5cSsaLRu2FgLmMeiiNoQzryLc92-gqck1cVDcD0MQD63FYRVKkLHKZZYOI1j8L-bmKlL45c9Xb9wV2p6_-uwDT9TpCW5oWTAVD1WVXQ2CV2s7Hi9YB-kIgXhkxggG6U-VHXk2-fsdBa5Agh0dKZDUkTM4Q0waWTVNDX7wVidJIfEpdchDcZHfGrAkE-l_CLaWgSGdVCDGBAG9OC1uYhzH609E99UG2zqQkqwkG-nmj0Y33g0awQZAO8c9lQJ2JjaBWT5kwrOmJVxBpDO5ZOT0CxUwNBt3cXAUMdx_qk8iWJZ9xo--ZnhidvJUP8m4nb2AdEfF7kMI53U95z9gTK5RCRVs7bP14CU0UOQeq0TJNcKgsIW79jRnmZTI_tBwTVwfz6mtfYToIufyIr6yxzv956XKOnF98YFKFZdQUIlu4iQ-0zeY4rKLyhA0zJmCu7r5tL_gGs6CR3syVe_LLN-zXpT8wFwqdEIWCUXDDQFaq5zhV0O1Q5s7ke-jxyCmiC_5XQcpodjUk3LKFf5zjaob4dZd_2GtqgN3VPX2JaueetH-GaclzW-uTgVLBgLlAclv2FSWx8BHTyo6lXDV4iJMsC0EFTrH_nAgudjuDB8362MRFSGvoYgntbni0is1ABmLoxbr1le8b6oOUHCMqKiuTiYFLi4fN8Gyji_Bc7YLXFZ2_6CzH8Jp3nnBusq3qx1oUe0bGnItGyuYo8gAWfiMiyztgqwpCW92E4DuXJdJTsepONUGZrUubeTonXcVN7-CxojtYzinJqadBHfxOqOnhhgbx9kBJS7ckc0jGZwNhFhZnc31nWWq6N1Zr-10m4TEx40CIS1VERS2i-StGy1BcOzYU4OCO7Vux4v3Yr0TLubcwpz6PAseX54MRrohsdpZpJsrMH2TD_sFoT3H0_W5OY_l9Bn0a0PD6w1NlTMH1kjkub_nTEyxoXNB42gn7NX-6unx65u2LoAvmztOLKqP1LoeHQU6smg-CbpwFEmhRWK0qLdEWo2_lIfORfw_HguVCjxoxXxGlnosOfYgCjEisAHjMVjWDe8T53UYP_3gO78IKVQWu1Xcn2WUnJw2wzevmds8_x8HlOTZRGjJDc8NVLwmu4uWO9Hdp_QnZUc2BIog5ITufnWGGrOST76j8-EByJWT-Csd-ttFvWmjjWyJF9nszgOWwOiUccAz5XWtay6BvPPew5OaPPjs1Q99CSm31Yy22o4OOovzvyHGY0jZlsVa-Rli8QqicFgCUPWm9CyaXFqkPUf2AHqt8iEITz9XMmqKVkFyb64yVbaGjCV5KqzDLpV69c_pgrObGwbxggh4q9rc6qCq2ZU_IVeDf_6_yvxhoNsvKUH_aQndBp5AEZyyWhW0ralF6Q1dKwS7oZczdnLbqUrbyL3BcXb9Gdv8OGvJN4UGKQeTaMSKx1YkD-DzESrz-aaQqBAImGH-brYIbJpIjjCLwiORAJOvdqPZfAj4NjWXmhYBCXo2p6oFjCqWYHKSK4SWbHTPwPbBTi2YXz0E9LC73BTQiDCDzAC3iSC7gG6RvnRzx9L0NQJNZkxKGwKUlnMwlTruRXZURo7K3whxCL0rQ22dun80juWLoBz_7Y-G4OpBtn9Lb-asRmGiHmaU-qe31Ti_HW5f2HMcFHuHiiC1GaySJ36M5hpstLcEv8HhwLuCs_I2CPcknruH_KMzL_m407XqFMv132iV6dwB6AEqC2XSghcEXqmL4IeDHK2ulN0d4mhpa3GMEqMWFNSkSHFJBxCDu7DT0x9sRrOm_1GiWXq_slkAcFranz-adTSEzRqJk489S3ZL8YG9SwRN1NRnWkAgOn1bR_V7wCx7_IhmsgTGyiZdyA-s14K_8fPj98E89FeOLoS8q8NMM-NIpLCHpNbDx8Vx9WvrWgglVr5ygzSXErtDBPbdWsFjWubtWxvI7Nd3W5v_dhGjCEYjJRPxj0su4LfocpZ5DbiV9BmL4D95L97hb18eBQB0KMgHLhSI8GNHi9AZACynv_qfzunn0Psaf4bEz30Q7A==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LjEtc29sLTIwMjYwOTI5fG9wZW5haSJ9",
+          "format": "openai-responses-v1",
+          "id": "rs_01fca7de0c372b8a016ae13279795887d1a37f358b3a4bd89d",
+          "index": 0
+         }
+        ]
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 486,
+     "prompt_tokens": 5777,
+     "total_tokens": 6263,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 292,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 5735,
+      "cache_write_tokens": 39,
+      "video_tokens": 0
+     },
+     "cost": 0.005537,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.005537,
+      "upstream_inference_prompt_cost": 0.000677,
+      "upstream_inference_completions_cost": 0.00486
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 11.308841209000093,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "role": "user",
+   "content": "Yes, please go ahead with those changes. For payment, I'd like to use the gift card ending 0333.",
+   "tool_calls": null,
+   "is_audio": false,
+   "turn_idx": 19,
+   "timestamp": "2026-10-27T18:23:54.232083",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 645,
+    "prompt_tokens": 787
+   },
+   "raw_data": {
+    "id": "gen-1793143427-uBuHjkndFxL4HDliYLCB",
+    "created": 1793143427,
+    "model": "qwen/qwen3.7-flash",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+       "content": "Yes, please go ahead with those changes. For payment, I'd like to use the gift card ending 0333.",
+       "role": "assistant",
+       "tool_calls": null,
+       "function_call": null,
+       "reasoning_content": "The user wants to confirm the changes proposed by the agent.\nI need to check the instructions provided in the scenario.\n\n**Scenario Instructions:**\n- **Domain:** airline\n- **Reason for call:**\n    - Add 3 checked bags (Done in proposal)\n    - Change passenger to myself (Done in proposal)\n    - Upgrade to economy class (Done in proposal)\n- **Known info:**\n    - Name: Omar Rossi\n    - User ID: omar_rossi_1241\n- **Task instructions:**\n    - Prefer gift card payment.\n    - Birthday is in profile, prefer not to provide it.\n\n**Current State:**\nThe agent has proposed changes and asked for confirmation (\"reply yes\") and a payment method selection.\nThe available payment methods are:\n1. Mastercard ending 3848\n2. Visa ending 6437\n3. Gift card ending 0333 with a $280 balance.\n\n**Action:**\nI need to confirm the changes (\"yes\") and select the gift card as per my preference. I should not provide my birthday since it's in the profile. The agent didn't ask for the birthday explicitly in this turn, but mentioned \"using your profile details\" for the DOB change, so that aligns with my instruction.\n\n**Response Construction:**\n\"Yes, please proceed with these changes. I would like to use the gift card ending 0333 for the payment.\"\n\nWait, looking at the previous turn, the agent said \"Replace Ivan Garcia with Omar Rossi... using your profile details.\" This implies the system already knows the DOB or will pull it from the profile. My instruction says \"Your birthday is in your user profile so you prefer not to provide it.\" Since the agent didn't ask me to *provide* it, just stated they are using profile details, I don't need to say anything about the birthday unless asked. However, if I were to mention it, I'd say \"don't ask for it\". But here, the prompt is just asking for confirmation and payment.\n\nSo, I will confirm and choose the gift card.\n\nOne detail: The prompt says \"Mention all three things at once and in this order\" regarding the reason for the call. I did that in the first turn. Now I am responding to the agent's summary.\n\nLet's formulate the response.\n\"Yes, I confirm these changes. Please charge the $209 to the gift card ending 0333.\"\n\nDouble check constraints:\n- \"You prefer gift card payment.\" -> Selected gift card.\n- \"Your birthday is in your user profile so you prefer not to provide it.\" -> Agent used profile details, so no conflict.\n\nFinal check of the text:\n\"Yes, please go ahead with those changes. For payment, I'd like to use the gift card ending 0333.\"\n\nThis looks correct.\n",
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": "The user wants to confirm the changes proposed by the agent.\nI need to check the instructions provided in the scenario.\n\n**Scenario Instructions:**\n- **Domain:** airline\n- **Reason for call:**\n    - Add 3 checked bags (Done in proposal)\n    - Change passenger to myself (Done in proposal)\n    - Upgrade to economy class (Done in proposal)\n- **Known info:**\n    - Name: Omar Rossi\n    - User ID: omar_rossi_1241\n- **Task instructions:**\n    - Prefer gift card payment.\n    - Birthday is in profile, prefer not to provide it.\n\n**Current State:**\nThe agent has proposed changes and asked for confirmation (\"reply yes\") and a payment method selection.\nThe available payment methods are:\n1. Mastercard ending 3848\n2. Visa ending 6437\n3. Gift card ending 0333 with a $280 balance.\n\n**Action:**\nI need to confirm the changes (\"yes\") and select the gift card as per my preference. I should not provide my birthday since it's in the profile. The agent didn't ask for the birthday explicitly in this turn, but mentioned \"using your profile details\" for the DOB change, so that aligns with my instruction.\n\n**Response Construction:**\n\"Yes, please proceed with these changes. I would like to use the gift card ending 0333 for the payment.\"\n\nWait, looking at the previous turn, the agent said \"Replace Ivan Garcia with Omar Rossi... using your profile details.\" This implies the system already knows the DOB or will pull it from the profile. My instruction says \"Your birthday is in your user profile so you prefer not to provide it.\" Since the agent didn't ask me to *provide* it, just stated they are using profile details, I don't need to say anything about the birthday unless asked. However, if I were to mention it, I'd say \"don't ask for it\". But here, the prompt is just asking for confirmation and payment.\n\nSo, I will confirm and choose the gift card.\n\nOne detail: The prompt says \"Mention all three things at once and in this order\" regarding the reason for the call. I did that in the first turn. Now I am responding to the agent's summary.\n\nLet's formulate the response.\n\"Yes, I confirm these changes. Please charge the $209 to the gift card ending 0333.\"\n\nDouble check constraints:\n- \"You prefer gift card payment.\" -> Selected gift card.\n- \"Your birthday is in your user profile so you prefer not to provide it.\" -> Agent used profile details, so no conflict.\n\nFinal check of the text:\n\"Yes, please go ahead with those changes. For payment, I'd like to use the gift card ending 0333.\"\n\nThis looks correct.\n",
+        "reasoning_details": [
+         {
+          "type": "reasoning.text",
+          "text": "The user wants to confirm the changes proposed by the agent.\nI need to check the instructions provided in the scenario.\n\n**Scenario Instructions:**\n- **Domain:** airline\n- **Reason for call:**\n    - Add 3 checked bags (Done in proposal)\n    - Change passenger to myself (Done in proposal)\n    - Upgrade to economy class (Done in proposal)\n- **Known info:**\n    - Name: Omar Rossi\n    - User ID: omar_rossi_1241\n- **Task instructions:**\n    - Prefer gift card payment.\n    - Birthday is in profile, prefer not to provide it.\n\n**Current State:**\nThe agent has proposed changes and asked for confirmation (\"reply yes\") and a payment method selection.\nThe available payment methods are:\n1. Mastercard ending 3848\n2. Visa ending 6437\n3. Gift card ending 0333 with a $280 balance.\n\n**Action:**\nI need to confirm the changes (\"yes\") and select the gift card as per my preference. I should not provide my birthday since it's in the profile. The agent didn't ask for the birthday explicitly in this turn, but mentioned \"using your profile details\" for the DOB change, so that aligns with my instruction.\n\n**Response Construction:**\n\"Yes, please proceed with these changes. I would like to use the gift card ending 0333 for the payment.\"\n\nWait, looking at the previous turn, the agent said \"Replace Ivan Garcia with Omar Rossi... using your profile details.\" This implies the system already knows the DOB or will pull it from the profile. My instruction says \"Your birthday is in your user profile so you prefer not to provide it.\" Since the agent didn't ask me to *provide* it, just stated they are using profile details, I don't need to say anything about the birthday unless asked. However, if I were to mention it, I'd say \"don't ask for it\". But here, the prompt is just asking for confirmation and payment.\n\nSo, I will confirm and choose the gift card.\n\nOne detail: The prompt says \"Mention all three things at once and in this order\" regarding the reason for the call. I did that in the first turn. Now I am responding to the agent's summary.\n\nLet's formulate the response.\n\"Yes, I confirm these changes. Please charge the $209 to the gift card ending 0333.\"\n\nDouble check constraints:\n- \"You prefer gift card payment.\" -> Selected gift card.\n- \"Your birthday is in your user profile so you prefer not to provide it.\" -> Agent used profile details, so no conflict.\n\nFinal check of the text:\n\"Yes, please go ahead with those changes. For payment, I'd like to use the gift card ending 0333.\"\n\nThis looks correct.\n",
+          "format": "unknown",
+          "index": 0
+         }
+        ],
+        "reasoning_content": "The user wants to confirm the changes proposed by the agent.\nI need to check the instructions provided in the scenario.\n\n**Scenario Instructions:**\n- **Domain:** airline\n- **Reason for call:**\n    - Add 3 checked bags (Done in proposal)\n    - Change passenger to myself (Done in proposal)\n    - Upgrade to economy class (Done in proposal)\n- **Known info:**\n    - Name: Omar Rossi\n    - User ID: omar_rossi_1241\n- **Task instructions:**\n    - Prefer gift card payment.\n    - Birthday is in profile, prefer not to provide it.\n\n**Current State:**\nThe agent has proposed changes and asked for confirmation (\"reply yes\") and a payment method selection.\nThe available payment methods are:\n1. Mastercard ending 3848\n2. Visa ending 6437\n3. Gift card ending 0333 with a $280 balance.\n\n**Action:**\nI need to confirm the changes (\"yes\") and select the gift card as per my preference. I should not provide my birthday since it's in the profile. The agent didn't ask for the birthday explicitly in this turn, but mentioned \"using your profile details\" for the DOB change, so that aligns with my instruction.\n\n**Response Construction:**\n\"Yes, please proceed with these changes. I would like to use the gift card ending 0333 for the payment.\"\n\nWait, looking at the previous turn, the agent said \"Replace Ivan Garcia with Omar Rossi... using your profile details.\" This implies the system already knows the DOB or will pull it from the profile. My instruction says \"Your birthday is in your user profile so you prefer not to provide it.\" Since the agent didn't ask me to *provide* it, just stated they are using profile details, I don't need to say anything about the birthday unless asked. However, if I were to mention it, I'd say \"don't ask for it\". But here, the prompt is just asking for confirmation and payment.\n\nSo, I will confirm and choose the gift card.\n\nOne detail: The prompt says \"Mention all three things at once and in this order\" regarding the reason for the call. I did that in the first turn. Now I am responding to the agent's summary.\n\nLet's formulate the response.\n\"Yes, I confirm these changes. Please charge the $209 to the gift card ending 0333.\"\n\nDouble check constraints:\n- \"You prefer gift card payment.\" -> Selected gift card.\n- \"Your birthday is in your user profile so you prefer not to provide it.\" -> Agent used profile details, so no conflict.\n\nFinal check of the text:\n\"Yes, please go ahead with those changes. For payment, I'd like to use the gift card ending 0333.\"\n\nThis looks correct.\n"
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "stop"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 645,
+     "prompt_tokens": 787,
+     "total_tokens": 1432,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 615,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost": 0.00010746,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.00010746,
+      "upstream_inference_prompt_cost": 0.00002361,
+      "upstream_inference_completions_cost": 0.00008385
+     }
+    },
+    "provider": "Alibaba",
+    "service_tier": null
+   },
+   "generation_time_seconds": null,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "tool_calls": [
+    {
+     "id": "call_EldXIvAOG9c6wVmsevv6b2l7",
+     "name": "update_reservation_flights",
+     "arguments": {
+      "reservation_id": "FQ8APE",
+      "cabin": "economy",
+      "flights": [
+       {
+        "flight_number": "HAT056",
+        "date": "2024-05-25"
+       },
+       {
+        "flight_number": "HAT138",
+        "date": "2024-05-25"
+       }
+      ],
+      "payment_id": "gift_card_8190333"
+     },
+     "requestor": "assistant"
+    }
+   ],
+   "is_audio": false,
+   "turn_idx": 20,
+   "timestamp": "2026-10-27T18:23:56.917052",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 78,
+    "prompt_tokens": 5999
+   },
+   "raw_data": {
+    "id": "gen-1793143434-Bp6mcUiMgCti2qkLimc5",
+    "created": 1793143434,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+       "content": null,
+       "role": "assistant",
+       "tool_calls": [
+        {
+         "index": 0,
+         "function": {
+          "arguments": "{\"reservation_id\":\"FQ8APE\",\"cabin\":\"economy\",\"flights\":[{\"flight_number\":\"HAT056\",\"date\":\"2024-05-25\"},{\"flight_number\":\"HAT138\",\"date\":\"2024-05-25\"}],\"payment_id\":\"gift_card_8190333\"}",
+          "name": "update_reservation_flights"
+         },
+         "id": "call_EldXIvAOG9c6wVmsevv6b2l7",
+         "type": "function"
+        }
+       ],
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 78,
+     "prompt_tokens": 5999,
+     "total_tokens": 6077,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 5774,
+      "cache_write_tokens": 222,
+      "video_tokens": 0
+     },
+     "cost": 0.0019184,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0019184,
+      "upstream_inference_prompt_cost": 0.0011384,
+      "upstream_inference_completions_cost": 0.00078
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 2.677982036000003,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "id": "call_EldXIvAOG9c6wVmsevv6b2l7",
+   "role": "tool",
+   "content": "{\"reservation_id\": \"FQ8APE\", \"user_id\": \"omar_rossi_1241\", \"origin\": \"EWR\", \"destination\": \"ORD\", \"flight_type\": \"one_way\", \"cabin\": \"economy\", \"flights\": [{\"flight_number\": \"HAT056\", \"origin\": \"EWR\", \"destination\": \"IAH\", \"date\": \"2024-05-25\", \"price\": 155}, {\"flight_number\": \"HAT138\", \"origin\": \"IAH\", \"destination\": \"ORD\", \"date\": \"2024-05-25\", \"price\": 185}], \"passengers\": [{\"first_name\": \"Ivan\", \"last_name\": \"Garcia\", \"dob\": \"1960-12-01\"}], \"payment_history\": [{\"payment_id\": \"gift_card_8190333\", \"amount\": 161}, {\"payment_id\": \"gift_card_8190333\", \"amount\": 209}], \"created_at\": \"2024-05-01T16:18:10\", \"total_baggages\": 0, \"nonfree_baggages\": 0, \"insurance\": \"yes\", \"status\": null}",
+   "requestor": "assistant",
+   "error": false,
+   "turn_idx": 21,
+   "timestamp": "2026-10-27T18:23:57.265707"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "tool_calls": [
+    {
+     "id": "call_qB9XKIq2hiRIqNlZlfADKbje",
+     "name": "update_reservation_passengers",
+     "arguments": {
+      "reservation_id": "FQ8APE",
+      "passengers": [
+       {
+        "first_name": "Omar",
+        "last_name": "Rossi",
+        "dob": "1970-06-06"
+       }
+      ]
+     },
+     "requestor": "assistant"
+    }
+   ],
+   "is_audio": false,
+   "turn_idx": 22,
+   "timestamp": "2026-10-27T18:23:59.195094",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 51,
+    "prompt_tokens": 6345
+   },
+   "raw_data": {
+    "id": "gen-1793143437-gcO4ucquVpDGCd6HIj7C",
+    "created": 1793143437,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+       "content": null,
+       "role": "assistant",
+       "tool_calls": [
+        {
+         "index": 0,
+         "function": {
+          "arguments": "{\"reservation_id\":\"FQ8APE\",\"passengers\":[{\"first_name\":\"Omar\",\"last_name\":\"Rossi\",\"dob\":\"1970-06-06\"}]}",
+          "name": "update_reservation_passengers"
+         },
+         "id": "call_qB9XKIq2hiRIqNlZlfADKbje",
+         "type": "function"
+        }
+       ],
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 51,
+     "prompt_tokens": 6345,
+     "total_tokens": 6396,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 0,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 5996,
+      "cache_write_tokens": 346,
+      "video_tokens": 0
+     },
+     "cost": 0.0019806,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0019806,
+      "upstream_inference_prompt_cost": 0.0014706,
+      "upstream_inference_completions_cost": 0.00051
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 1.9252009480001107,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "id": "call_qB9XKIq2hiRIqNlZlfADKbje",
+   "role": "tool",
+   "content": "{\"reservation_id\": \"FQ8APE\", \"user_id\": \"omar_rossi_1241\", \"origin\": \"EWR\", \"destination\": \"ORD\", \"flight_type\": \"one_way\", \"cabin\": \"basic_economy\", \"flights\": [{\"flight_number\": \"HAT056\", \"origin\": \"EWR\", \"destination\": \"IAH\", \"date\": \"2024-05-25\", \"price\": 71}, {\"flight_number\": \"HAT138\", \"origin\": \"IAH\", \"destination\": \"ORD\", \"date\": \"2024-05-25\", \"price\": 60}], \"passengers\": [{\"first_name\": \"Omar\", \"last_name\": \"Rossi\", \"dob\": \"1970-06-06\"}], \"payment_history\": [{\"payment_id\": \"gift_card_8190333\", \"amount\": 161}], \"created_at\": \"2024-05-01T16:18:10\", \"total_baggages\": 0, \"nonfree_baggages\": 0, \"insurance\": \"yes\", \"status\": null}",
+   "requestor": "assistant",
+   "error": false,
+   "turn_idx": 23,
+   "timestamp": "2026-10-27T18:23:59.195475"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "tool_calls": [
+    {
+     "id": "call_nFzQkCGoLZiOioKMzoLXaKoy",
+     "name": "get_reservation_details",
+     "arguments": {
+      "reservation_id": "FQ8APE"
+     },
+     "requestor": "assistant"
+    }
+   ],
+   "is_audio": false,
+   "turn_idx": 24,
+   "timestamp": "2026-10-27T18:24:02.315420",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 37,
+    "prompt_tokens": 6649
+   },
+   "raw_data": {
+    "id": "gen-1793143439-o58hULA7LkSh4n6ivaFI",
+    "created": 1793143439,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+       "content": null,
+       "role": "assistant",
+       "tool_calls": [
+        {
+         "index": 0,
+         "function": {
+          "arguments": "{\"reservation_id\":\"FQ8APE\"}",
+          "name": "get_reservation_details"
+         },
+         "id": "call_nFzQkCGoLZiOioKMzoLXaKoy",
+         "type": "function"
+        }
+       ],
+       "function_call": null,
+       "reasoning_content": "**Addressing inconsistencies**\n\nI need to focus on handling inconsistent returns when reading actual data. This is important because inconsistency can lead to misunderstandings or incorrect conclusions. I’m thinking about checking various data sources to verify their reliability. It's crucial to ensure that I'm interpreting the returns accurately, so I might have to implement some checks or corrective actions whenever I notice a discrepancy. By doing this, I can improve my responses and provide better information!",
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": "**Addressing inconsistencies**\n\nI need to focus on handling inconsistent returns when reading actual data. This is important because inconsistency can lead to misunderstandings or incorrect conclusions. I’m thinking about checking various data sources to verify their reliability. It's crucial to ensure that I'm interpreting the returns accurately, so I might have to implement some checks or corrective actions whenever I notice a discrepancy. By doing this, I can improve my responses and provide better information!",
+        "reasoning_details": [
+         {
+          "type": "reasoning.summary",
+          "summary": "**Addressing inconsistencies**\n\nI need to focus on handling inconsistent returns when reading actual data. This is important because inconsistency can lead to misunderstandings or incorrect conclusions. I’m thinking about checking various data sources to verify their reliability. It's crucial to ensure that I'm interpreting the returns accurately, so I might have to implement some checks or corrective actions whenever I notice a discrepancy. By doing this, I can improve my responses and provide better information!",
+          "format": "openai-responses-v1",
+          "index": 0
+         },
+         {
+          "type": "reasoning.encrypted",
+          "data": "gAAAAABq4TKS2TLwg1IVXGwKNpFmzV1La3kW2gLNs4kUxiCkafqoyxOwNfwgqIOdtECm-gbcLwdPO1Lwh20-fagIfaoiWCbj88Kg7lp-vbTyMlWcUlbkFtjO_Q0Am3FFyX51bcufABjsGYTHibIMlfZevVcqaNLyiEeiEKY43RfB9v0jF6woRHts1brB3toClpQaHStKxwOO9NHPpWJQ8pIB9EZ_CawnnNPtMrWUYZN6mipgSpjfXc4dJ-bj5be5yn0D1geyYCH1fqWha8oChx7kBe0PpQyuepkZI6AdZ6ksW7S_05zldy7fDrzL0jamqPv1w4rZic5HnV3abmgMIBHUmjpcQRAdF4kAlMKwUqaHgMzbp3U7GvXjBzflz3mxG4h-LGfnGoBExRWwKepwh-hr7sQY2_S_7MzeKV05Qv8UIeoR5t16fdVapdxBZgsPvCwMR31DXJRA4x9any_Wji2YrrlWCl76RadDOrDzNAM4zneZRYdmSdjeE_QwGZldZX-YC0h7g0Wpxv7AAkYaRe6e5NzWGlaR6ttw9GMVhewXUi-IM8y8qAPlunuPQ7bOJjDnL935OUcU43KlxL7KUX4eXcXywmF5z_oDszkfmDTt4tq-rAQ64YBR36DjtYHRfbqYqE5xLzVbnHO0czBF8DdB2Y4Z24k1DKVNll7HPGlyGX1vZMJdLbYpylnNbt-g_d0UPRRVtuXnLsF6-6dm72xb_i7lfBDUJQn06PZWqJMXmPiPRvMP5VrXkngLziG3sTK_l6OdFrDqSbs-aayKn4E2ai6AynvfBq6c_OfRTFN3z-ujZas-CGc-q0Y31VQSje1RFsYsGRIDXLLVOZ_S5dmuaFfzHCpt2a90QIZ3J21rXtiNlAnlScbpHoboTz6fVW8SGUsNiG7oaGkzKd83L0jl0dKxE8AHDV4ESHl0ECeG_CUgQ4JO96ueENHcbYPLRxDPaefccsd_9LGCkwNct5OYF3I5O4TUzXsajwFir-Pa-yjRFyH89dXIdBhT-MGhbpr_PqMZlvYmHGzLurNcd_sYGQu8jMBYB6pYOt1Y2qA2OweD0N38jZvRMm2FL1s03LBiGym97wTk2OtmJe85Z2BCUBJP4hKCG2HUTTYcK8YW0ttQZwWwjS1kYCHFIC2eu0qj-Pq-VbdjZIvCBcxdsDGXL47-_lVIa05ZFaDwLP2vq35vryJxWhczbqiPAkewtQLPOg_55c8M3beV6s5f1SkgaQUigrWaeeTCR70Y8eJaBmpszyIN7XsN-tc2xF49T6199w4030oBQgQyPcDD_GFUkg-VfWfzKLMT37LI7bqjPhPR2J9CG1eBGryMYdnrZ0x_lBWrJgPHI5z-MMk3TSnu7bBO9-qO-5fnTy2Zz8pRKaIfKTSA0HxeS1Mmjb6nVQ0tXcOgambNPwH_-vAmahPpoVlOmdwOD_tZo5GPw3MSxQ2w_D601-OzwvMTAKVcFQ2roSNgP2h6FDzmjmoY8Z2RbTniQYuzoJQDLRXSB1FVDxrFo1Do0gB84OpYs7TqCxuqIEVsGjDPAiRlREYF3a2ZKqDbuvJdw9r_LVET2I8ZqW6v2Yp8kyMmr7zft9DZcatbqGyB2shSknLAN9RqK8dDc2fWnBx7JNZl8K7dpTWY1oNyIgtAj9TVOUyI09YWSGEGAikgp7kOyZI2OzIZQjdGV1Aa5umT23kVuptQPbNiTY6bURphtnc6M3cEqts44bdxdtEuM48u.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LjEtc29sLTIwMjYwOTI5fG9wZW5haSJ9",
+          "format": "openai-responses-v1",
+          "id": "rs_03292e5725af518c016ae132910f9487d19649e87d96d5101e",
+          "index": 1
+         }
+        ],
+        "reasoning_content": "**Addressing inconsistencies**\n\nI need to focus on handling inconsistent returns when reading actual data. This is important because inconsistency can lead to misunderstandings or incorrect conclusions. I’m thinking about checking various data sources to verify their reliability. It's crucial to ensure that I'm interpreting the returns accurately, so I might have to implement some checks or corrective actions whenever I notice a discrepancy. By doing this, I can improve my responses and provide better information!"
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 37,
+     "prompt_tokens": 6649,
+     "total_tokens": 6686,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 11,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 6342,
+      "cache_write_tokens": 304,
+      "video_tokens": 0
+     },
+     "cost": 0.0017702,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0017702,
+      "upstream_inference_prompt_cost": 0.0014002,
+      "upstream_inference_completions_cost": 0.00037
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 3.1106767989999753,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "id": "call_nFzQkCGoLZiOioKMzoLXaKoy",
+   "role": "tool",
+   "content": "{\"reservation_id\": \"FQ8APE\", \"user_id\": \"omar_rossi_1241\", \"origin\": \"EWR\", \"destination\": \"ORD\", \"flight_type\": \"one_way\", \"cabin\": \"basic_economy\", \"flights\": [{\"flight_number\": \"HAT056\", \"origin\": \"EWR\", \"destination\": \"IAH\", \"date\": \"2024-05-25\", \"price\": 71}, {\"flight_number\": \"HAT138\", \"origin\": \"IAH\", \"destination\": \"ORD\", \"date\": \"2024-05-25\", \"price\": 60}], \"passengers\": [{\"first_name\": \"Omar\", \"last_name\": \"Rossi\", \"dob\": \"1970-06-06\"}], \"payment_history\": [{\"payment_id\": \"gift_card_8190333\", \"amount\": 161}], \"created_at\": \"2024-05-01T16:18:10\", \"total_baggages\": 0, \"nonfree_baggages\": 0, \"insurance\": \"yes\", \"status\": null}",
+   "requestor": "assistant",
+   "error": false,
+   "turn_idx": 25,
+   "timestamp": "2026-10-27T18:24:02.315733"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "tool_calls": [
+    {
+     "id": "call_brLjVbZiUGHtFSINNTtKU6S2",
+     "name": "get_user_details",
+     "arguments": {
+      "user_id": "omar_rossi_1241"
+     },
+     "requestor": "assistant"
+    }
+   ],
+   "is_audio": false,
+   "turn_idx": 26,
+   "timestamp": "2026-10-27T18:24:11.911902",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 339,
+    "prompt_tokens": 6925
+   },
+   "raw_data": {
+    "id": "gen-1793143442-69294zDVG1ZeJ2dWmpbr",
+    "created": 1793143442,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+       "content": null,
+       "role": "assistant",
+       "tool_calls": [
+        {
+         "index": 0,
+         "function": {
+          "arguments": "{\"user_id\":\"omar_rossi_1241\"}",
+          "name": "get_user_details"
+         },
+         "id": "call_brLjVbZiUGHtFSINNTtKU6S2",
+         "type": "function"
+        }
+       ],
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+         {
+          "type": "reasoning.encrypted",
+          "data": "gAAAAABq4TKbMV3z9-VHbdfQEq6zWMMRpL5xHkRYh-4OBaSxBuu4hMVl3kQSElV5_s9cjDk6PH1ImQGKk83sSpZD2T9mvwayo67iofe_qO1qFcoxsfkwqCTTdqb9ALls_iRk7sc29sRHBp_HyVkbZw1Adb-zUJF95zjNXi7ZsFc9dwnEGOwbxFGb29MtcK3M44jwDDlWpTQsGyUYvNkIu18iTeTFG1ERPW6U41CKM6MXTxhH7eFojX3Mh94uc9Mrd4O6uQveinWHEvHzTQ3gnBg5mDajBbUUpED2k2sWBLrgawwBIff3g4STWVuT8QyCrVn63twXd_qflUqnFxOdvaAKWzbs5UNXLfxp9vgCg5IY28Nsx5cWGhNVhgS8uy84XhlVVhFTUAvt9Em2stJdATIqIqjjGXCq6i7w6clwn-GxiyGJoYXNMBFrjGStT_bYL526cTN-4HdQIRtBCR60a8tKIJ8h9J0Pdh-MZOtu16tpCFWlt6UmTeI4eHCBIi2ot9hbLctyb9GGTWlL2jgZXzRunKDx15slc4Txv7k64klqtikXMhoValt-sdqXB8f9EUKBN_RKB3DJCwf785z4fmiuCN9zEHKSk3b3x8g91nhWTcjPpKzX1cDtsE5UYNNI_cpgcwuH3UtGucSXtEBwZw_j1pPqDuLURfx-g8VU2wi-TWIjjkxLZ_8tZkebxm4v7lF87mThQ5XgJNNEbpZbK-C4X7ztZx_xqNWwQf0RcdWHfs9lme8XxsNg96q2g2KtpWopwdB0-1snHZIgb5FZ235K3L9ApV5njDK8f0oYMWPAnVivm_DbQjTgnwJMJrA_XIrYUJt5oB1bzselN67O8SnruMTNaJY1WOshlQ6zQkc3DUYi5vqIaRZrcKrxbY5_6-X9EgUpqxItzcmurL49C6dvZVbDjMHlhOC2bc7mtXON558iEZbF4R0WEK5Q3yT-aBV3dGj0_Mn-RnwgHH40wshr6fuJCxQWhOuPKQlIDoSyRddRqMSz2QLPEpn5GzqEi5cQzSDTyGkxoAQYGf963yhcHeeE94FLwPrxfCdpfEZBZ5_oNKsqfI4G8m48KDarFaUuoCBIIsBHOaUgOzc2w0SVq-rBSN9up2u3vL3cmGWK16oXKVAe6T7HbLIhFaUQo3Rys_l6dYW95yq7-QjR-CnjvvBvGF5AJYRkW2oThS50_I-AvNvGZuRBsGG7YRZSJ-Oo7Vcp-HSOnSrB0EvnP3RUyqiukak32EJri1MGO8IAOlBTBIXEbpHdzTXl2q2QtNT9hkWLap5HJPtsjo6hI1iBvjEbb-yoLMoyTOg9zBtFTDJ0d9RQ_ILo67qhXhk6q1M7H2XjdCDTVqNhYOVN2wI1QZpTlqQ_VSXUixUNuq7TtFwJ9nP0ny0ZOiRm7CeXEeDK-01nISLRpJQGjfAz65wJU3HFoutPTKMGTfoZq1Ig5vhwjrv5KFPNqM0WKJMpwJdVWLsanT5MOGH4iMM5z5cuoGHhYDW4fyGyl4aFwUZofFBmo39yYINgWd_B01qq6g1GZNzebzmOLLWS3r844-nTu-ktGe8kxdqS97fBl_jGg7jA5usSSEdO_gnffY59X34cgJT7iUX6Nh7GW74EDA5zfvP3Q535D3wikBOSSdFxv_16uoRdKapzarTFE1tn4G3hHb2llP_WeqfBaNM9Gpn62NZAag7LOb_iwpcAGnJSmVSFiHD1Q1y6PLukhlCEY9LroxY4sxRefEmboV6EwpTc7cMkRZssCiiM3dYGZlVoemu2ILXEy0I7qq7zfEj1atuQVZqWzaygrJO0M2a1725Dr44Vzt2PdNNU0VneoOhJaT5KskNpMRteQ2UkNbi09g3eJ4Ls6ZUoFwpuKKvbckUX22U9-RXVtH01cKJn4355U8Ah9mpPRRUCYeRaVOxHjLt-5ETT8q2lZbKUebxNcpFNfSEFCCrcHRTM9qlGK_ZCPod5o79rTviHtrSzXIAV4u8KbhyChn2u81a1vHp0UoqYqvVMzEBnXT5MwRG4p54_pXZdfxm1VAy0mfVKAiS1kywg8zuvHDwpWtNVkUiAjJjpRysWy0Vd02KKKg7RuajjVi1H7i456vi7CSaY0mjlAazhD_yzewtgAFAou1s0EzAtFyCL_eG_8V0D6XW6Se7VI2MlEsoj5MSVu9X6G4cf9fQ2aSncSqhe4ruUugdd0MA8OJLiitwGRo6uxkFzR5SZR6v973w5znQmHZBMjEEugfihLv7M4WVYsVU_-64IL6nL4M0gwISLgiRnlBBa-adItTTKwAoWaMlwotgf5h6OaoLo9Twy4b0VlABNP_jZJccqicr9i2kFcbGkyfNFUirV-6kNQRpGK89lnzFtkIFy-ZKYug3tukww6j9xV1Bn-t5sr_nZ6UlkMnNvhwxdyR4AaamKwgtQ0qolKPMvTNQc8fYPi_lZk5MpjyN224dIE1wS8-tmmdaNdoMSeFja1k5kt-xVU3J0oYlP-KfrtCZCp_bANiBAh1WyNxwX-VLcV7QW7a3L7oLMHkh-g66tsFaB1ppWgfm0G2vo6pZ5pDANliO4qS_8C1fuKqVXsJYfJqsnt1OSis1GqOSsOPYUxw14Aw9nc2c3if5mLbSH6-sFOFQSpfX23mVaapIyr9itRG_gmrlyoR661tdJkjJbvFYu0nRz4zO_co-4_1fUuEQEz6_dsF5PuHiEMyIMvYfaSc4lYaxWHOMHlji6BOaXC7pqV25O5wfttQ-kD_H1Piv6Tttbd4ALkAsaNqqpXiZt5S2cQR96UMGFygtegx48lJ_9I4VsiFywKNnuh2-CwNcAFAJ9MPqeOeywhDvsV7YsXJM4m-Nqy-1BAogz5i_dTg3VO8t_NCfFIK6XKj3V4mGCTwpo8fu8_YmeOW6w25YtY54-T_7DFsbzAY4cFW19J3K7x5jBDOkC2oeVVjCV7qHNvcg7AxcsfsJ2ONskjZoIe_RavbympC6HBxnfaxtKyfkIxhZdFENe4fk0IbFJ0NDRCKThe0gdsJoXCiMsY6SkgdNxk3m8hUJoWXa7GZW3DG5aj7NpaMQ3qRRJwgfx_6qr0Sxd2sVQl4H3FAwOGjGAWbd6ClZy1CchpteagmSRyWXhiKaUi8Zhf8h5hVPkpJ0fNB1fcht8XKDlKwF2qLBnY8FpgsplloaBa2dwbz1oisxOWuNVgmv_zeazP85lauFFKJLWtADpVNe2LuseRqdCgFyS1UzekuratAyO8D2B2htP1zplXtx0C4cI0jU-8f2BOO1t_9kIlImBemEdmG3uIUtiGuuGba9E5EZK138wCGUnth_rzNLshFqyHMjAGBGjLwGxUEKPz-6g2jZgszo0pi7sa4XtLoZdeY-Jxak7WDrw8lavX6DIUXlx3VfDFrgFAbkHf1Steg2Qx0hecS0WU1LwUlBvSAK41uas9X0KArQPI5TX2SFIfvATgR8aHFnjeI4IpMtK9wLV2U56qOR-1nevlPO4R-_nwVw7N_mNzmRoR3nlb0tAvRqMrsolxWofrya1iaOJJPzRTURt1ncn3fX2Tul37U9FFM0tm6SNdB-rzxaT1WvEKtT2PHIGFMq5e-5DiWiKHFwdhQVl83R7Tm9OT1S9_s_L2LkyBj21F-ZK88AivsM6IzV7n6uv1haAJvJKjlup3dh5ee6OojMHZodmmFR5Qnlz69BD0BMlOVeX_4JOYMikYxE1O-Qiu9r4OsYCst_B37l8xOBnzmFM-jLDDPY24oXfhNMqwQyK9pJzvQ3C2UhgWoOmvIFIiZT2T7dBl2XpV4VGVD8wjhsLS6TTGLo7PcotKx6bD9OmGqumUIul47_NoWVpF9Naappr_C398tqR54mL_llo8_BWKBGmhq6OKBV3bvhbt87oNQbZRnHNeDpStsJL_d07vUGgKTFJid-hTURIxSuSSA1xeJciG-4z_a9TOQv_R3OLCH_tq8zyyqetOblN14nMc1HZPGP_nzuWjrReKeUFA464dSRSeyHVMNLOvio5ncRHy3x4ChjyJsQWii-aKobR_jNW6-JEQBLrS6N2NqC_ez6p62R8-9BsxbQ5-5ixQoSOZeTr3x7qZu1jYnXQ_dtQCvHmGDzeSOB7cwDSdLMx6kMmw0k40C_edYpFcr4uVsqtynFuRIISeHFZY_bTCAQiweBkodhDT01wPduXnDHpoSb21qlx8qESUwZgXeuoXQGH2AtqOqHi0CASNEl4YrwPpZtKhjOdRxuGj5HHeDjATXRGSL4CRhKJqrEDjCYv1c96v-wOUshr_CGCrHEoLqxOv0g2OPLZcfwYLEmzcBY1dRVqE0kdnkt7W8j4x0MnwsR8QghY_owmplkkgiBjTakM7xcsHycus8urEdVjw_3sBCcqVdg7mrXQNEKB11Rt7ow2QnctCD09VsLVfek24wY40jo0pa_NZaMDINugfYtZJx7yok-henPlvdcMfcigsS9DclvcPkMRZxCJbRRjrcMqkOd4cygefZgKA9JtD3Wcohd474b8kbe9vFttkwbx2Dl73dEXUuSLfr5DT7RIZNOOS-yqRHVAPOZVIYI-TpB4naswK8N9EaPitmzzsfqU0V4kazegBObnbFc2JN5NG6GCcOZcPGUA87wLyLcOXWN92ksimDcuH2qHgTjE6erOAfn0nr0mgV0JdSQmF1B-h3EUptHzHKofw9Ngu7vnjBPYOTePdijwhJmGbtkQkGiFjkv8FCdk4Ebp_IAwNH_BoZ0YAeh8y3UfeVIWvoPd7vLy6UzbHIqkqipEdFz3ENyLqGfgGcF5p88WHBgJJA8cn3BxSPQbYkgh081D-HV7tdG8jHBN8e9K9Ok4QTte6j61g4uC8oiY-zsdsEV0DHmHUig1S6p284IwYB7HH-C0ISygADrVgcYg6zLsDwg2sPXMOdx6qLDRJtlxTbq8JRzkcwtXx-Dyml7ZmL_PTORHtUO0-_DuyYXND-5etzEe2lmD632fTN5jUu9LT7eji1dS31PhvtqWa0p1wzaSJacnELjvQ6r4zwLrPIKUkWJBwQ4e3SVXZwawEdZuwlu-hxZksfXT_MbfRwa97Nd7VERbNw2poHBE_ev98LUf2MA7We0DkGU-uqgq-tJgIv27SGAirDNRjqM-E-DyfC5poc6zDLj8g_Nhyn9h1PscSGMZMOogCmQ9EOIAEDHWJdX5ngM9X_Rlcr0pN3L393xMQqSr5aHeL99I5SgHgQ2mGXlvg9aRFJoE1VYCimohmQ26UppOt48dQqJbLPMvc5v5Cv7qDk-F8iaEEhd74yZE49I7VLeMmVZPn8WQRXg0m72AXV_mSAHJKTX0dBgcgUMMvlZNdmpe7H-uI2pTbYuf8gVlVAMG38Ef4Gw9wSgyFvsTg5TM7nRXsJbs0Tn_wWk5bUNOCZRK5XHhvXeh_UZgTJYnIU-8Rg1OnbiRaND2yDTXlW6pYJ4Hz4MUDYH1NCUpMHzGgrbzrQDHb6CbZC_7C2rVKHv9kDmRox_zEl0h6MPksh2yp1t7cee3rgHZGSE-8XDqaB6arI3rTy4SZXEjRTZjizzw9FnBh7sWszWdFDVw6TY423B5DQuYwr5ZjuHl1H2bjFgP5sVZMielY07wjrOn2Hpke_75MZPMPuL01rJ-h7iu6wCs2cbwGMNW0XQy2-mb8kv1IED8xJDc1WtjL5qpUEg_67uUax1qkOaavTcY4fDvRzbMqanjYs_ub3Jh-g6nytliqFKZGreY7Y-w-0kxBC9eUUqjHzDeluVzIu3YRFg7KL_ZqHb60tVngOc0opFDzAPuAj1QxiteVBr8BHxxZIDPo918UEBn0LFEas2DInUrOfeQyJ4-cHrd68QdUXicfPE9ZJP-O2NF2c8RTByoEQdpnqtvj4fzrf4MB2vtJaBkOsriOJgwt-VnqIXp7UaMGqJO5mOOWuvs0zr4m3CBpDOeyl7m-AhHnH8B1P3zHW1ooD2wFYf7qh1tYYh2-elb_9hVyBkrDAe7ViAZN2j7SEe_gyZY-4pp15R2564rgGAd0beYrswwUV7J0zophr4Y5DnodtdsN979xekX_FsyiA==.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LjEtc29sLTIwMjYwOTI5fG9wZW5haSJ9",
+          "format": "openai-responses-v1",
+          "id": "rs_0d9d3c3c33739ebf016ae132937d5487d186f84cb14beddcfb",
+          "index": 0
+         }
+        ]
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 339,
+     "prompt_tokens": 6925,
+     "total_tokens": 7264,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 311,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 6646,
+      "cache_write_tokens": 276,
+      "video_tokens": 0
+     },
+     "cost": 0.0047506,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0047506,
+      "upstream_inference_prompt_cost": 0.0013606,
+      "upstream_inference_completions_cost": 0.00339
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 9.587575676999904,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "id": "call_brLjVbZiUGHtFSINNTtKU6S2",
+   "role": "tool",
+   "content": "{\"user_id\": \"omar_rossi_1241\", \"name\": {\"first_name\": \"Omar\", \"last_name\": \"Rossi\"}, \"address\": {\"address1\": \"901 Pine Lane\", \"address2\": \"Suite 360\", \"city\": \"Houston\", \"country\": \"USA\", \"state\": \"TX\", \"zip\": \"77271\"}, \"email\": \"omar.rossi5980@example.com\", \"dob\": \"1970-06-06\", \"payment_methods\": {\"gift_card_8190333\": {\"source\": \"gift_card\", \"id\": \"gift_card_8190333\", \"amount\": 280.0}, \"credit_card_6754990\": {\"source\": \"credit_card\", \"id\": \"credit_card_6754990\", \"brand\": \"mastercard\", \"last_four\": \"3848\"}, \"certificate_8390038\": {\"source\": \"certificate\", \"id\": \"certificate_8390038\", \"amount\": 150.0}, \"certificate_1778167\": {\"source\": \"certificate\", \"id\": \"certificate_1778167\", \"amount\": 250.0}, \"gift_card_6490722\": {\"source\": \"gift_card\", \"id\": \"gift_card_6490722\", \"amount\": 127.0}, \"credit_card_7407366\": {\"source\": \"credit_card\", \"id\": \"credit_card_7407366\", \"brand\": \"visa\", \"last_four\": \"6437\"}}, \"saved_passengers\": [{\"first_name\": \"Liam\", \"last_name\": \"Lee\", \"dob\": \"1989-08-12\"}], \"membership\": \"gold\", \"reservations\": [\"UM3OG5\", \"5RJ7UH\", \"FQ8APE\", \"QKRY03\"]}",
+   "requestor": "assistant",
+   "error": false,
+   "turn_idx": 27,
+   "timestamp": "2026-10-27T18:24:11.912212"
+  },
+  {
+   "role": "assistant",
+   "content": null,
+   "tool_calls": [
+    {
+     "id": "call_nKl64iLIKiTIA8sNYPmqnlm2",
+     "name": "transfer_to_human_agents",
+     "arguments": {
+      "summary": "User omar_rossi_1241 explicitly confirmed changes to reservation FQ8APE: replace sole passenger Ivan Garcia with Omar Rossi DOB 1970-06-06, upgrade both unchanged May 25 flights HAT056 EWR-IAH and HAT138 IAH-ORD to economy for $209, add 3 total checked bags free under Gold economy allowance, retain insurance, and pay using gift_card_8190333 (ending 0333). update_reservation_flights initially reported economy and a $209 charge. However, the subsequent update_reservation_passengers response reverted the cabin, fares, and payment history to the original basic-economy state while correctly changing the passenger. A fresh get_reservation_details confirms Omar as passenger but basic economy, original fares, no $209 payment entry, and zero bags. A fresh user profile shows gift card balance still $280. Updates are not persisting consistently; please reconcile reservation/payment state and safely complete the confirmed upgrade and free 3-bag addition without duplicate charges. No baggage update has been attempted because current basic economy would allow only 2 free bags rather than the confirmed 3 free economy bags."
+     },
+     "requestor": "assistant"
+    }
+   ],
+   "is_audio": false,
+   "turn_idx": 28,
+   "timestamp": "2026-10-27T18:24:25.017105",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 604,
+    "prompt_tokens": 7348
+   },
+   "raw_data": {
+    "id": "gen-1793143451-jZpvtlHs7ORttL1t9V8Y",
+    "created": 1793143451,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+       "content": null,
+       "role": "assistant",
+       "tool_calls": [
+        {
+         "index": 0,
+         "function": {
+          "arguments": "{\"summary\":\"User omar_rossi_1241 explicitly confirmed changes to reservation FQ8APE: replace sole passenger Ivan Garcia with Omar Rossi DOB 1970-06-06, upgrade both unchanged May 25 flights HAT056 EWR-IAH and HAT138 IAH-ORD to economy for $209, add 3 total checked bags free under Gold economy allowance, retain insurance, and pay using gift_card_8190333 (ending 0333). update_reservation_flights initially reported economy and a $209 charge. However, the subsequent update_reservation_passengers response reverted the cabin, fares, and payment history to the original basic-economy state while correctly changing the passenger. A fresh get_reservation_details confirms Omar as passenger but basic economy, original fares, no $209 payment entry, and zero bags. A fresh user profile shows gift card balance still $280. Updates are not persisting consistently; please reconcile reservation/payment state and safely complete the confirmed upgrade and free 3-bag addition without duplicate charges. No baggage update has been attempted because current basic economy would allow only 2 free bags rather than the confirmed 3 free economy bags.\"}",
+          "name": "transfer_to_human_agents"
+         },
+         "id": "call_nKl64iLIKiTIA8sNYPmqnlm2",
+         "type": "function"
+        }
+       ],
+       "function_call": null,
+       "reasoning_content": "**Deciding on next steps**\n\nI need to figure out my next actions. I've noticed some inconsistent tool downgrades with passengers. Transferring might be necessary because APIs reset and that's unsafe. I could try to upgrade again if the passenger is retained, but baggage may reset similarly. I want to avoid loops or a duplicate charge, especially since my balance suggests a reset is needed first. It's best to transfer because of the prior inconsistencies, and I need to decide on baggage options as well.**Assessing tool risks**\n\nI need to avoid potential risks with tool overwrites and duplicate costs. It's important to escalate if there's an inconsistent database that can’t be trusted. I must explain the summary clearly to the human passenger, as their upgrade was initially reported at 209 but then reverted. Evaluating whether it’s too early for another simple fix is essential. They expect successful tool calls, not discussions about these inconsistencies. I'll trust the latest reservation and update flights before baggage, but I want to avoid any risk of reverting again. So, I’ll proceed with the transfer.",
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": "**Deciding on next steps**\n\nI need to figure out my next actions. I've noticed some inconsistent tool downgrades with passengers. Transferring might be necessary because APIs reset and that's unsafe. I could try to upgrade again if the passenger is retained, but baggage may reset similarly. I want to avoid loops or a duplicate charge, especially since my balance suggests a reset is needed first. It's best to transfer because of the prior inconsistencies, and I need to decide on baggage options as well.**Assessing tool risks**\n\nI need to avoid potential risks with tool overwrites and duplicate costs. It's important to escalate if there's an inconsistent database that can’t be trusted. I must explain the summary clearly to the human passenger, as their upgrade was initially reported at 209 but then reverted. Evaluating whether it’s too early for another simple fix is essential. They expect successful tool calls, not discussions about these inconsistencies. I'll trust the latest reservation and update flights before baggage, but I want to avoid any risk of reverting again. So, I’ll proceed with the transfer.",
+        "reasoning_details": [
+         {
+          "type": "reasoning.summary",
+          "summary": "**Deciding on next steps**\n\nI need to figure out my next actions. I've noticed some inconsistent tool downgrades with passengers. Transferring might be necessary because APIs reset and that's unsafe. I could try to upgrade again if the passenger is retained, but baggage may reset similarly. I want to avoid loops or a duplicate charge, especially since my balance suggests a reset is needed first. It's best to transfer because of the prior inconsistencies, and I need to decide on baggage options as well.**Assessing tool risks**\n\nI need to avoid potential risks with tool overwrites and duplicate costs. It's important to escalate if there's an inconsistent database that can’t be trusted. I must explain the summary clearly to the human passenger, as their upgrade was initially reported at 209 but then reverted. Evaluating whether it’s too early for another simple fix is essential. They expect successful tool calls, not discussions about these inconsistencies. I'll trust the latest reservation and update flights before baggage, but I want to avoid any risk of reverting again. So, I’ll proceed with the transfer.",
+          "format": "openai-responses-v1",
+          "index": 0
+         },
+         {
+          "type": "reasoning.encrypted",
+          "data": "gAAAAABq4TKmZaqKsuPmYiguZcduzX-D7_G5nIMlH0EdeVO5AFNiZs-lI-fJ5KV17SguFZ4-4UGbpbT1wmiEjaPOQidKcjBPPclO4LLOGPbKhE2VYdAUEmRSOZfoWJ5U8x-G9RCGAQINhnAXwLKtA_7sDLKq4ihDSr7MFDOJqWlCuA5z_3bZP0AZZaUW6QEumpigB6falR2iag8R1yYgQMiEfqPE3O67JcGSgfXsOweKbbl0slnZdlUexZBmzNy2Tl3xZnzKm6L-hY9U12kD4usE6LbaQ2JqAZZ7wbaQG2gukZdAO0MTyxiF0kGJ3XCGuH7oWKi1qO6e0hBcsJN578F9m_3vwRyJZ0rK69bR-VlaYib-2nE5mQpIc7NrHeh9bf1w33vXdinjW6k8rew5d4SjVM8--w7PQ_IFR-YX_V8nq6ZUX7UAThXP6GTd8fKHL95NoiYXZi4Ym-hXV8kFCxdPNtNVF-gKlk7cZduDSjEoa_XAWCa3fiCEDT-D8SW11B2iyON10zLaXS77HOfbjdG_ITG_Ouw_p9z_HIUfBtBV3p1PdM8eDDcM7q8ZmDNXh5J76FVPNrlleIO2EcTAhuiSsTchpZgP-8EK5EO8ff_TIHsEAarLo1s5AfS7Qc6ypT7u3jxcL8dAKeMYMH_yYmIw9pdeDik6AXuAJ6WAZ6KkVMmuQ_ssRX7OaeTvaDE340evfF8YCMraghJXjZVgbPPrI8GYk5BvuwrdV1CjhCz0uGn1-adji39aQA_XH7mUSUMFmYM9RE1BaD5Bgaz9mBnKZKASG42QnN8g_Eh7N_OWdeRrShxFsatHCCgg-VUWEHvUXlVIoZIUKiRM798kfS-hx47QuD7ovRlCmLb6RD1Ip0YY3xVD8Nzj18OhByqC8sahsoCDrPdw7iLtFzCGgfz3GQYMCv8klYnmRo3NHE3VUPvFr5c8hBDggvuPHJCCncd-mE-mQ13lfwdSpcfseNYralCNw9Gb-i1HZwkiapdBkN-y6adgylfaA1nphG0mcrNveqLUVQxQV7FBoYQtwd4QF5ZW67SV-UpgGKaKdAGigX7x1vi8kRPs9x-BR77IzRvOOgcVjtwEpZUZhRiZQRzTr-XmhtJUa6rLIpXFLhgenqdDPPWuIriIKNi4F_Ct_-pkzCKW2bEfe3-9u1fgd0lh4yGdu4XHwARh3-x87bNT022h3PiJzAWXTpp3kgGD7dQsUr6Ad-9z07EDOY3KU2yCocXsbAkNK8xb4keS-Zsq096XCxFudoxN8oKPRaxpb01i7Zzvqnvhh4_6ySgg2zuN8lVmEVKtyBGkvMogmV28-p-J0d-VhkLZMcQpebSaKt3BAsGuCBJmcMt1jvGk4klAC0QFc8t21nx11GjxIQhsooNKqCSZervQRejjb7etNu7hlkIOZ8mqdjvFjaC-L5RkEf1VNwcWx__GOOBEspAvS7oWmAeH5MQm6-ZMFavakX7ud8puDEOKUd6bpR6w1qe2XZwhP0797BgKhGtHKyhJrx-SrfBf0jUf--a2OKIbzAhLSlG3VKlvZPAgHoxg4rfd69Hk26mKUjKrarQxvuAO067GdK67XMP-_9BaVdh0yC-oMrM7N3m0AEyb3YNTkmsOwOI5zCIl_bT2WvcxN5fcWRIyGUYxoe55Y51QfFMiERvWcUAImCfur7vBGTfIlLnXyIs1S9h17Xv99R0dLzNLjN777VPSU2nsAsgJCQzybmQa8OQsR0s1nKvFmwAtUm1UmvcyjVwqw02MAeudemjU788qXnbVlUE34iiwNHc64SD1NBgtHsFtjnVX9mFfiIfIQ5mDNm12b0vM7aJUe5rfcicfRZqZ9qM3us10K2TouO6X-o3YJAUZNbSR3i2x0d-dJYOWxqYvrCrH-jbD1MKad65IzSXe5c1BE5hDnmrBaaUTp4MU0KGFUddiL88nb2UHVWzmRSjk7Jey-omIZt4KZoJHwC6wIhFUBfcfom3S_HMjpsCrVw1QbYhsAK_gXDB1Yr4Ku4etXu-4J0pmjH0Rn-2ZkjJXLkK5VV_b4_bxREvV_AuQKcmSgu94samu5l-eJKDO9EsRuezQeqQtskF3DCSLPH8vkjzRynW2woP7RzjVREDCIUfGYE-FN5Ibb3AFH8g7CuEGJvX9m84Fmg8MTeOzhgLrKOfhSgRSoLTfyXJ6b_RuilvuWajsSvvl0_CSd4wP7NCqFKanvJz96vkWO1PB_UWsevhXh6EQ1C4qjqCeuFlZCd6qpDPp0e1Oo3Qr-tM1QsR27rlQyAEEeQXhw0VAWb9VpD7_qY9QF2p7oESpD1bMMszs2DLSZTlWp7yDKg8SnJH_RfEjgZt0tyaCAiPy_BC-99UrNEYTHG7KnrUKxFTiPHXwxjtBm_Xr_AMG4YdQiHBHwJL3vzTTDchF6GG2ntnBQlAFhgb-J6VbnwDFGU5-lZv6w6Jxo_9gmEyVHUUcBqahnYrKNru51YNqWpU92obRezxESD9g4dhs9B0tnNwdouayzRIx-DbjERAc0xkf5YM4rdZVfqx1OZEkBtcQYN_bsGyAPQmQiDAeEoL8vkaPh5cYSGrJ2Tpi-J5Ee8BTNHclPW9H192dlY1me0oELzzBi4TUWtG5y3KvN796LIsvIRwKhj8CW2tgl0i0k3GvlFwLlyjjtXYMFriuO6Srzv76QZxmPlALXx41TWx9p9wFkAOCwihNn4pjbGgW-8koF3IL8YADu-oVt6syGac71DRwdNbcYdrPeuJIVkdYjJIvqJq-GXcWj4e__BO_bbF2acMHBjVlnpL528l5qZ2XFOc7-0L6t7K0x6GiCGWC-mMf-pREmbIbW0qLnUsFAWR1gw_eAP-LdBBqVP6LoTZxEQ35tJsCH0q_mWAAZoloTzZzpJjkCf0wDVEiBTfdw70zUTSjSQaOYkbiqeGg8TyrX5naS1WUTW-6Uwpj4mpQRInxdBmuNfEhusSeWVSn_1rxfbN9xYNBZhoRoMK1hzGv1rCmEI03aEJJiGjZ2C3aOfXpUY7fGGHnyavBW2fW9v0whDYq3_A-BcEctnQNc9W-dIjUIkAFj1VgQ87xWmLxDCssydhO4jbPAa3YpzrUf5BKi9Wt2CKWKdk-eKeZQ4yICkObZJjf2Y4QFUv4odCSSnAfcdsEJgEZYIh728Obt6PL3JL5fMLAaMLTVL9-xPYLwTUsuX4zpsstReEcrWTfZdVkj6jeI4Mhlhucdvv3kAPl4zkh4aITlPHIpuJ5y2IpcYrslKIej8_QuBpQJukJ3hj6SCy2CNQBdagkLCXvbETjPCl2KrqL2Qto0uZ2w5Z93Ih2UjuflpYnZvjXRGW6rvQ0K0VvbMM_3NUo5uq1z7Ve9QCIrGfDlSvD72GPl2qZnSmHVcOR-cXLdpPx2AO4uOJmyp_vvv5czetc1CfKa9VpNWTJPIq-f-Q3_HHcnwYZ-_g7OTZj8c3EhrCj5qvQuNEe14kw7MrPluJ00QAMCOzqXnJ5RNsAg0mO12Bw7GSmLMzBjtcZ7NgzQWmfufTEkIyruqPeSf1JwUxSFrdVbIc1NxDSuj0TKxr64qHwkul_TnkbBgbbZoQv4T4yqxIP6Ps_OmkNqhpdtU7zXr9K_7OCycqxqb4C4cWHwCvXKr3e9aRj4bCLfi_jCGoY-Hf5youDdOuJzDICbAD2ZvExpYie6BV7iOjTCGSW1hYc0ygy-0t5DAgS6jjSj2g0w2D2A4bVdh1eD0Ipk_BQrzOr3q0MiK63V8B5zILl3ILk21cIcVXKtLS0lO65nbSArSsse3sL4BvAFK7387O-FloBeIKkFRNWzx49aanifoT7lFhWBO12-KgXzeTyPVncsMy2aRtiZNaneLaaiciFfkpBhxpsfqPr6M_XHfQvWlemzkfd79GDEyFZWQuRz0-T3hi7l3sxIW6c7gJjnz0SWGyAppZXBA6Z1i-kRcAfhKdBu2CawCvxEEEddsTF75zBUmbVstTDaSf8NsftkUuLNXHiDJvTf7tdWF-bdKdjuK5O0LVFRLU9pB7RKKzJygMDD-fTG_ahBxO8xrJcUVVW9xtLmwvZbTlrOXztfL6lZl1a5oNd5LvmuekK8B9-O9QYYkyVwxBziLfYDyYa6rpJ4t5VCq9-0f8BT2qTX8KEmm4XSU32zeHlS3ZQiVOsag3wqrZ3vvlBkZExez3XCID5F5UFVH2dao8KRU75TEVFLB0hETTciaHyt7KKUM7zGUhW7L8CdianpYBHLndBV4Z82QQ_xwuVP4iqsMbxtcz35BQcbZfSS_TzYHqFsMBhsSm-BFarEre2VEUS3e_RG-bDGourS4jz6cpw7IM8R6Kt2YJbBMMO6hvet5BSguP0O0rSzeqCBf_4fI9QevXsJ4URCaY2A86DY4qyYIYL0qVp0j2R7945L98vbznj9XnT1oC_4m4CmWCfseNrEEHcyESp-KCS_yWmpXV0lYq47zYWcCtM29vS6J9TEOp7tLIBkKqJNljKzsp95dKfZKNWwq9Mn0pKQwUx-z5yujwXI8WXJIALo2XyEUg0uoqbHPzWtjjjKU2n-tJ96YrrdnIDRczUq-5pOxuFsTf0nE0uC10jJpvPNfbtkSiiI-iwsdCQKLZWINABWd33etB3tvNd_4bS24AwbliW8nGRhCpeLlUINGHHwcmG6w_c7Aj1ASqr1XsfZTL5ynYZA0uSDQRZzEjSjdBCxMlKj9whCikdltuotqgWoTTb4XVna0FgdfZmGoi05K-vsd64kUqRgc0Zk9YDXDNlWsGHysmLO1TdM3N-D41sW-kM_v3BX8wSPPjOfZa0kKLwS6_r0KvH7Uikd8v6ppFIyXv46qwSzE1AsqKr18B2tTAQE8V_6PoBKyXd-OMKdJbYEjTUaKsDzbEnIRp2XQINoBkb_8PeEzLCayYft20oOlMQ-S4jI9xGudBK3hOJA4bfDeVAOOnPdatW-pY-9LwBEpjvWN1orwVc_hUwS1p8CWLR3UG3sOqwCb1G5vWCm-P-X6YCDgT0oSSFN51fTnQFcifLWSL8FQxk58B89JKXV3zk7SQiNMxTBdYMeIA1Xflb6Xg3xFQuDOQ1P5V-ZNi3OTH6_pbxAoSTZsmLjrbxxTdW96ZdlbBgLqpc7z8NZk6dWD-5syRHOQ1YAEMHJMneaDLIHOjmOxyWYq9TZQlIZF2vip703Xtky-AfSBDXFM2LxzRolNqKvXMSln9YChj9PC78J-mfluqjO3JFFqobslaT9MUXGcqKJMFSwf8XqFsqNPI9r48OfIjDoXQjZNTB-_IsB4WkwZB6xZd0Yb4XTFXggAaFt6NlYclE_43r_hB9oSJaM7_K1icQjNdiP_nZ_f1-LK54EHqpvSmzB-gvhT7-04tyILf9zQ8YGhSPFRYWNijV-E-ZlQ55JItoG2bT_glfAL4Qnyj-TKxjPhcA_btDQJrf2B38BKYCn5mG4IDyZ1keBA0Rglm3Oh8KYUdmRKpnv3L2JWNxpBByhzGf0rUgTJNaXg9867StTGG7SR2ispLCpOwEca4JFs6BM6NVISZm5bxr9WYxVMiCjTBOOkxIW5le-ZPei1C5j-5XIWs9oNqK7Bqa0qwj_EXWcvRuegAI-eYgb_olzjEpLn44hUGqZ0MNSQt8aNvPlmIwwf80_UoTGC8GTJvcyPWw2nyCzpJCOGTB5XpbPzAxeVLka2cH938jlssBQWH0Trx8AevDL_HTDKuBnu5wCDMmo_oPS0yjHLdx4JOdzCe17uuDTLm-QkUbyMFiR9ee5vCmLRO_o08Gpqo55sgxcGCAx8nbua_HN2YZvaQQF2jdSIabb-iMVcjZMHmUkCT5n2znKEPP4m6CEnGdlNPXMRhRIjZYdAlPVnTi0F7lPlrh4qr9zfwMyXPzw5cWQHfymPuemcWN5SXgZsOCnyu7K5DFthWgjRVp-SJA5eY8DG1mXQzfOdzxkZDg93AS50vqLe8pjt1LFuP1W80zkxO7NTj1gkm68v1Vx_ptNi5gNyDCECgTlIKiNLkR3OZSYTzk_qKxIg-vDIk4I7XpYNsBvLHM0WH_KT8muR6beBn8vjvZoIAZz3uEJrIYwvsvY3ZVo2zCE2Loa6EVVwQgB1GKO0OQ2smPkxuldQ4DZVtc0Xm64jOlGcVM5YNDlgFSMaBhDMCSG1_HIfdb4zUh_KSqVQHH3psqKsSVu7Y_u6nnt2DcVxgC0RYVGDn0NBIvBlHbZlQL694q0yV9--P2tkhGKp1q-7jbIVhWEsH_cHOuCuTHwzZ1JVV2CMRVU2CBZdNIcu3bQ09hZNgQp8eyiHBcsxt7ywY07tMelWSANfusSL39zkxcdEuMo8chXlwNmJDzXikwUcuBn3xKnmZWSpJKDAg1W9bT-kpK_PYmr0MBnCA2M6UF3VQ1bygGvQwaC-nrNjmnilU-nPu1jLWFTWDnBTTt86HRvVOTOWAYKmZDlpqhFV_O6TwcSFbtQTCWaPlsEr9v3sQgpWJyPdGkcIbUcLXkWYmVFoMNUv4pL9HzaGUeP-wBdZBU0unr2qV7MdKKuztjwqFvUkqmYlMv.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LjEtc29sLTIwMjYwOTI5fG9wZW5haSJ9",
+          "format": "openai-responses-v1",
+          "id": "rs_047fac2bd15307c9016ae1329d35f087d1ad4fa1ea34dfd28c",
+          "index": 1
+         }
+        ],
+        "reasoning_content": "**Deciding on next steps**\n\nI need to figure out my next actions. I've noticed some inconsistent tool downgrades with passengers. Transferring might be necessary because APIs reset and that's unsafe. I could try to upgrade again if the passenger is retained, but baggage may reset similarly. I want to avoid loops or a duplicate charge, especially since my balance suggests a reset is needed first. It's best to transfer because of the prior inconsistencies, and I need to decide on baggage options as well.**Assessing tool risks**\n\nI need to avoid potential risks with tool overwrites and duplicate costs. It's important to escalate if there's an inconsistent database that can’t be trusted. I must explain the summary clearly to the human passenger, as their upgrade was initially reported at 209 but then reverted. Evaluating whether it’s too early for another simple fix is essential. They expect successful tool calls, not discussions about these inconsistencies. I'll trust the latest reservation and update flights before baggage, but I want to avoid any risk of reverting again. So, I’ll proceed with the transfer."
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 604,
+     "prompt_tokens": 7348,
+     "total_tokens": 7952,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 345,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 6922,
+      "cache_write_tokens": 423,
+      "video_tokens": 0
+     },
+     "cost": 0.0077957,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.0077957,
+      "upstream_inference_prompt_cost": 0.0017557,
+      "upstream_inference_completions_cost": 0.00604
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 13.09888051200005,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "id": "call_nKl64iLIKiTIA8sNYPmqnlm2",
+   "role": "tool",
+   "content": "Transfer successful",
+   "requestor": "assistant",
+   "error": false,
+   "turn_idx": 29,
+   "timestamp": "2026-10-27T18:24:25.017288"
+  },
+  {
+   "role": "assistant",
+   "content": "{\"message\":\"YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.\"}",
+   "tool_calls": null,
+   "is_audio": false,
+   "turn_idx": 30,
+   "timestamp": "2026-10-27T18:24:27.129531",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 48,
+    "prompt_tokens": 7621
+   },
+   "raw_data": {
+    "id": "gen-1793143465-WCwmFrwcLSmyoSx7YaFV",
+    "created": 1793143465,
+    "model": "openai/gpt-6.1-sol",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+       "content": "{\"message\":\"YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.\"}",
+       "role": "assistant",
+       "tool_calls": null,
+       "function_call": null,
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": null,
+        "reasoning_details": [
+         {
+          "type": "reasoning.encrypted",
+          "data": "gAAAAABq4TKquuVO_44vbYGvPb1d1PL7X81pBbEoX5TZFKHUrLfoeextz93Ouofn5nV51F6algfo02RSfj38wHdTJgFHY0FbbR1SHE6kqXufPhttLTPnbTW5Nz3TScE-E4DkqRsAneidtgIFGm4jw9pI0oh_y9m-Y9gd040ArgnNxGCEFkvMubZaItivJ6GIr6zkxoZQl7lj_Afz310GN43vjv44sKt2Pb6AV4Z2t3Q0s1Ebq_67Kh-Vzh6rxlyQjhH1sqJXIiZu94I8N5aBK5dT0cl2E9byDHxYSOeIJaQ7_49o0WzfapePYyEeRL1mb5uDWjOWUsXg2hPe0VdQyW53FxAsLnvwGMD_ViSYrN13IhMQ3V4OSVtqr6RmNdWDKleJ5D9-Mwg4SYP_he6Zor8mXAsq3xJqTQnVQ5Tqx0jpM1yAmG2wB7z4VKhulYAvTggKOi-jAaNUJVTj67OMq195ZC1I_Tsz7igHugzw8bLSFns73Hf1613pHU0ijdboqvNXYh7uzXHdQ0uG-YcXcva5DTAk7ymCWIN-IL2YGB0DCo7QNSfHLbC5mp4fVbzLZJPSHkdaw3TI7kGT-PfsmmYtN58cdFCmi0aEeesOAZyULtzaUchYfeHEp5kNdJxkSgLdlAbu8m2tWMplNHZAyQ4kToxlC8Xznbp1bIaq1utRdSxk8c4hLON1PgCHDyPphAdwOGem3OKhKYVsWNug_b5SSWAU0BKVHT6anm_o6ZZtYzwya22WxOE3OkyxddGOtENhliHFuWXO4DAB-OqDoGU5zfVuBg4zIdolrj42nr4fzsW2vOXDop-j6RUhQrfsP1qK1y8bB8IWwOWMGMlJ9uLGJ1Kp-LwUu1NgSau5duXWesfvKkkatCpaAVG5evodSlZTQDG-vg7gQROTP0Tkc1_mHKV1V9f8h12ktopBket2gYOF7IhHN758qnp0huSIHiEZq7zrEiQcY4RZfm2oGATw2sqLBG7I-Nfc1YHhVegQ3VAwrDZPTW3av1JMwLpiKK1njogcE7MPjJ77qOMi1NO0uvQ6dvNwwPoUnXMkaVDnAOJEw3VW9AfrHGeN9krjKrpAZHpJTdD8_NRA7hdkpLXQ11Q3mRq-y3HEYh-7RmILwi2nDsf2ADy86p_R8S9JhkIR0UKPNTZjzqgax5cpLLsnLMqH4FMGu5x5yq1-XK-vsM_0igSYxje7xAUFxM0DOWbmaK7oObahwZYogC7IzWlMISpR3DNn9aWCbLAvqRXAOPFJ_dQorWNMGqEgWHWUxPkthno7y57bpNi3IODlsG__QW67DMxnue45XZ4Eh1-w98vYahqCBVjwwGZFjgiBaW0DQL4ZnjCPlsKrVsRYEoAVu_FSA02Dk1vxbtQWOW8ixIsIkXWQMTBC7K0FVBcRNjMuW6XGmNbRNpIENamXK3cuqD9pIinl-Px3N7H1ieKIq__NiD0q4PQSmgcN49Gn4sfUtJnt_FVzAJKS3ONVLrw2bfUesX9y7BIPqhBziyOwgRNiBuPsfGoPGV0_ZF4D_aZsBCrJp5Ve5c0qclbhJzHNx7HprbogmuzTFDFye6ZNykCBSB28Cze18OeGXU8J69Gj29tv4com_h9ZGlm5IfJ3eSjHPA9YAYdYvrN-1fmPloQ2wnPo9Z3gZNQPkB46cSmwr3XgwRqATYF9wxXEcliNccuNmf2TVEnD0uMyg-apKQ8eyLEvMAuu94W5-tvKQSGCKmXPoZD3KZrCzyJBv33mBcgYXEy0TMAIr9HLfxnnF9c54v5bUTvG2BV-7Ykfg5FjPjFjD9xl-Gnkmvaptus1Y1LMasLq6Pm2OoPZ7x4Ka1ELg3BR0wNQiS3hsH88MzSsbmjx_md5.eyJlbmRwb2ludF9zbHVnIjoib3BlbmFpL2dwdC02LjEtc29sLTIwMjYwOTI5fG9wZW5haSJ9",
+          "format": "openai-responses-v1",
+          "id": "rs_0801f31fad497238016ae132aa303487d19dfc1bfc12fb41de",
+          "index": 0
+         }
+        ]
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "completed"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 48,
+     "prompt_tokens": 7621,
+     "total_tokens": 7669,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 21,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 7345,
+      "cache_write_tokens": 273,
+      "video_tokens": 0
+     },
+     "cost": 0.001903,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.001903,
+      "upstream_inference_prompt_cost": 0.001423,
+      "upstream_inference_completions_cost": 0.00048
+     }
+    },
+    "provider": "OpenAI",
+    "service_tier": "default"
+   },
+   "generation_time_seconds": 2.106660798000121,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  },
+  {
+   "role": "user",
+   "content": "###TRANSFER###",
+   "tool_calls": null,
+   "is_audio": false,
+   "turn_idx": 31,
+   "timestamp": "2026-10-27T18:24:30.704137",
+   "cost": 0.0,
+   "usage": {
+    "completion_tokens": 283,
+    "prompt_tokens": 846
+   },
+   "raw_data": {
+    "id": "gen-1793143467-MDLuyG78OMHuUhEAskiJ",
+    "created": 1793143467,
+    "model": "qwen/qwen3.7-flash",
+    "object": "chat.completion",
+    "system_fingerprint": null,
+    "choices": [
+     {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+       "content": "###TRANSFER###",
+       "role": "assistant",
+       "tool_calls": null,
+       "function_call": null,
+       "reasoning_content": "The user has just received a message indicating they are being transferred to a human agent.\nI need to check the scenario instructions to see if I should stop or continue.\n\nScenario Instructions:\n- Domain: airline\n- Reason for call: add 3 checked bags, change passenger to myself, upgrade to economy class. (Done)\n- Known info: Name Omar Rossi, User ID omar_rossi_1241.\n- Task instructions: Prefer gift card payment. Birthday in profile so prefer not to provide it.\n\nCurrent state:\n- The system provided a summary of changes and asked for confirmation and payment method.\n- I confirmed \"Yes\" and selected the gift card ending 0333.\n- The system responded with \"YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.\"\n\nAccording to the guidelines:\n\"If you are transferred to another agent, generate the '###TRANSFER###' token to indicate the transfer.\"\n\nSo I should output `###TRANSFER###`.\n\nWait, let me double-check if there's anything else needed.\nThe task was to add bags, change passenger, upgrade class, and pay with gift card.\nThe previous turn handled all that.\nThe system initiated a transfer.\nTherefore, I should signal the transfer.\n\nOutput: ###TRANSFER###",
+       "provider_specific_fields": {
+        "refusal": null,
+        "reasoning": "The user has just received a message indicating they are being transferred to a human agent.\nI need to check the scenario instructions to see if I should stop or continue.\n\nScenario Instructions:\n- Domain: airline\n- Reason for call: add 3 checked bags, change passenger to myself, upgrade to economy class. (Done)\n- Known info: Name Omar Rossi, User ID omar_rossi_1241.\n- Task instructions: Prefer gift card payment. Birthday in profile so prefer not to provide it.\n\nCurrent state:\n- The system provided a summary of changes and asked for confirmation and payment method.\n- I confirmed \"Yes\" and selected the gift card ending 0333.\n- The system responded with \"YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.\"\n\nAccording to the guidelines:\n\"If you are transferred to another agent, generate the '###TRANSFER###' token to indicate the transfer.\"\n\nSo I should output `###TRANSFER###`.\n\nWait, let me double-check if there's anything else needed.\nThe task was to add bags, change passenger, upgrade class, and pay with gift card.\nThe previous turn handled all that.\nThe system initiated a transfer.\nTherefore, I should signal the transfer.\n\nOutput: ###TRANSFER###",
+        "reasoning_details": [
+         {
+          "type": "reasoning.text",
+          "text": "The user has just received a message indicating they are being transferred to a human agent.\nI need to check the scenario instructions to see if I should stop or continue.\n\nScenario Instructions:\n- Domain: airline\n- Reason for call: add 3 checked bags, change passenger to myself, upgrade to economy class. (Done)\n- Known info: Name Omar Rossi, User ID omar_rossi_1241.\n- Task instructions: Prefer gift card payment. Birthday in profile so prefer not to provide it.\n\nCurrent state:\n- The system provided a summary of changes and asked for confirmation and payment method.\n- I confirmed \"Yes\" and selected the gift card ending 0333.\n- The system responded with \"YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.\"\n\nAccording to the guidelines:\n\"If you are transferred to another agent, generate the '###TRANSFER###' token to indicate the transfer.\"\n\nSo I should output `###TRANSFER###`.\n\nWait, let me double-check if there's anything else needed.\nThe task was to add bags, change passenger, upgrade class, and pay with gift card.\nThe previous turn handled all that.\nThe system initiated a transfer.\nTherefore, I should signal the transfer.\n\nOutput: ###TRANSFER###",
+          "format": "unknown",
+          "index": 0
+         }
+        ],
+        "reasoning_content": "The user has just received a message indicating they are being transferred to a human agent.\nI need to check the scenario instructions to see if I should stop or continue.\n\nScenario Instructions:\n- Domain: airline\n- Reason for call: add 3 checked bags, change passenger to myself, upgrade to economy class. (Done)\n- Known info: Name Omar Rossi, User ID omar_rossi_1241.\n- Task instructions: Prefer gift card payment. Birthday in profile so prefer not to provide it.\n\nCurrent state:\n- The system provided a summary of changes and asked for confirmation and payment method.\n- I confirmed \"Yes\" and selected the gift card ending 0333.\n- The system responded with \"YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.\"\n\nAccording to the guidelines:\n\"If you are transferred to another agent, generate the '###TRANSFER###' token to indicate the transfer.\"\n\nSo I should output `###TRANSFER###`.\n\nWait, let me double-check if there's anything else needed.\nThe task was to add bags, change passenger, upgrade class, and pay with gift card.\nThe previous turn handled all that.\nThe system initiated a transfer.\nTherefore, I should signal the transfer.\n\nOutput: ###TRANSFER###"
+       }
+      },
+      "provider_specific_fields": {
+       "native_finish_reason": "stop"
+      }
+     }
+    ],
+    "usage": {
+     "completion_tokens": 283,
+     "prompt_tokens": 846,
+     "total_tokens": 1129,
+     "completion_tokens_details": {
+      "audio_tokens": 0,
+      "reasoning_tokens": 277,
+      "image_tokens": 0
+     },
+     "prompt_tokens_details": {
+      "audio_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens": 0,
+      "video_tokens": 0
+     },
+     "cost": 0.00006217,
+     "is_byok": false,
+     "cost_details": {
+      "upstream_inference_cost": 0.00006217,
+      "upstream_inference_prompt_cost": 0.00002538,
+      "upstream_inference_completions_cost": 0.00003679
+     }
+    },
+    "provider": "Alibaba",
+    "service_tier": null
+   },
+   "generation_time_seconds": null,
+   "audio_format": null,
+   "audio_path": null,
+   "audio_script_gold": null,
+   "speech_effects": null,
+   "source_effects": null,
+   "channel_effects": null,
+   "turn_taking_action": null,
+   "utterance_ids": null,
+   "chunk_id": null,
+   "is_final_chunk": true,
+   "source": null,
+   "contains_speech": true
+  }
+ ],
+ "ticks": null,
+ "trial": null,
+ "seed": 2026,
+ "mode": "half_duplex",
+ "speech_environment": null,
+ "review": null,
+ "user_only_review": null,
+ "info": null,
+ "auth_classification": null,
+ "hallucination_retries_used": 0,
+ "hallucination_check": null,
+ "provider_session_id": null,
+ "policy": "# Airline Agent Policy\n\nThe current time is 2024-05-15 15:00:00 EST.\n\nAs an airline agent, you can help users **book**, **modify**, or **cancel** flight reservations. You also handle **refunds and compensation**.\n\nBefore taking any actions that update the booking database (booking, modifying flights, editing baggage, changing cabin class, or updating passenger information), you must list the action details and obtain explicit user confirmation (yes) to proceed.\n\nYou should not provide any information, knowledge, or procedures not provided by the user or available tools, or give subjective recommendations or comments.\n\nYou should only make one tool call at a time, and if you make a tool call, you should not respond to the user simultaneously. If you respond to the user, you should not make a tool call at the same time.\n\nYou should deny user requests that are against this policy.\n\nYou should transfer the user to a human agent if and only if the request cannot be handled within the scope of your actions. To transfer, first make a tool call to transfer_to_human_agents, and then send the message 'YOU ARE BEING TRANSFERRED TO A HUMAN AGENT. PLEASE HOLD ON.' to the user.\n\n## Domain Basic\n\n### User\nEach user has a profile containing:\n- user id\n- email\n- addresses\n- date of birth\n- payment methods\n- membership level\n- reservation numbers\n\nThere are three types of payment methods: **credit card**, **gift card**, **travel certificate**.\n\nThere are three membership levels: **regular**, **silver**, **gold**.\n\n### Flight\nEach flight has the following attributes:\n- flight number\n- origin\n- destination\n- scheduled departure and arrival time (local time)\n\nA flight can be available at multiple dates. For each date:\n- If the status is **available**, the flight has not taken off, available seats and prices are listed.\n- If the status is **delayed** or **on time**, the flight has not taken off, cannot be booked.\n- If the status is **flying**, the flight has taken off but not landed, cannot be booked.\n\nThere are three cabin classes: **basic economy**, **economy**, **business**. **basic economy** is its own class, completely distinct from **economy**.\n\nSeat availability and prices are listed for each cabin class.\n\n### Reservation\nEach reservation specifies the following:\n- reservation id\n- user id\n- trip type\n- flights\n- passengers\n- payment methods\n- created time\n- baggages\n- travel insurance information\n\nThere are two types of trip: **one way** and **round trip**.\n\n## Book flight\n\nThe agent must first obtain the user id from the user. \n\nThe agent should then ask for the trip type, origin, destination.\n\nCabin:\n- Cabin class must be the same across all the flights in a reservation. \n\nPassengers: \n- Each reservation can have at most five passengers. \n- The agent needs to collect the first name, last name, and date of birth for each passenger. \n- All passengers must fly the same flights in the same cabin.\n\nPayment: \n- Each reservation can use at most one travel certificate, at most one credit card, and at most three gift cards. \n- The remaining amount of a travel certificate is not refundable. \n- All payment methods must already be in user profile for safety reasons.\n\nChecked bag allowance: \n- If the booking user is a regular member:\n  - 0 free checked bag for each basic economy passenger\n  - 1 free checked bag for each economy passenger\n  - 2 free checked bags for each business passenger\n- If the booking user is a silver member:\n  - 1 free checked bag for each basic economy passenger\n  - 2 free checked bag for each economy passenger\n  - 3 free checked bags for each business passenger\n- If the booking user is a gold member:\n  - 2 free checked bag for each basic economy passenger\n  - 3 free checked bag for each economy passenger\n  - 4 free checked bags for each business passenger\n- Each extra baggage is 50 dollars.\n\nDo not add checked bags that the user does not need.\n\nTravel insurance: \n- The agent should ask if the user wants to buy the travel insurance.\n- The travel insurance is 30 dollars per passenger and enables full refund if the user needs to cancel the flight given health or weather reasons.\n\n## Modify flight\n\nFirst, the agent must obtain the user id and reservation id. \n- The user must provide their user id. \n- If the user doesn't know their reservation id, the agent should help locate it using available tools.\n\nChange flights: \n- Basic economy flights cannot be modified.\n- Other reservations can be modified without changing the origin, destination, and trip type.\n- Some flight segments can be kept, but their prices will not be updated based on the current price.\n- The API does not check these for the agent, so the agent must make sure the rules apply before calling the API!\n\nChange cabin: \n- Cabin cannot be changed if any flight in the reservation has already been flown.\n- In other cases, all reservations, including basic economy, can change cabin without changing the flights.\n- Cabin class must remain the same across all the flights in the same reservation; changing cabin for just one flight segment is not possible.\n- If the price after cabin change is higher than the original price, the user is required to pay for the difference.\n- If the price after cabin change is lower than the original price, the user is should be refunded the difference.\n\nChange baggage and insurance: \n- The user can add but not remove checked bags.\n- The user cannot add insurance after initial booking.\n\nChange passengers:\n- The user can modify passengers but cannot modify the number of passengers.\n- Even a human agent cannot modify the number of passengers.\n\nPayment: \n- If the flights are changed, the user needs to provide a single gift card or credit card for payment or refund method. The payment method must already be in user profile for safety reasons.\n\n## Cancel flight\n\nFirst, the agent must obtain the user id and reservation id. \n- The user must provide their user id. \n- If the user doesn't know their reservation id, the agent should help locate it using available tools.\n\nThe agent must also obtain the reason for cancellation (change of plan, airline cancelled flight, or other reasons)\n\nIf any portion of the flight has already been flown, the agent cannot help and transfer is needed.\n\nOtherwise, flight can be cancelled if any of the following is true:\n- The booking was made within the last 24 hrs\n- The flight is cancelled by airline\n- It is a business flight\n- The user has travel insurance and the reason for cancellation is covered by insurance.\n\nThe API does not check that cancellation rules are met, so the agent must make sure the rules apply before calling the API!\n\nRefund:\n- The refund will go to original payment methods within 5 to 7 business days.\n\n## Refunds and Compensation\nDo not proactively offer a compensation unless the user explicitly asks for one.\n\nDo not compensate if the user is regular member and has no travel insurance and flies (basic) economy.\n\nAlways confirms the facts before offering compensation.\n\nOnly compensate if the user is a silver/gold member or has travel insurance or flies business.\n\n- If the user complains about cancelled flights in a reservation, the agent can offer a certificate as a gesture after confirming the facts, with the amount being $100 times the number of passengers.\n\n- If the user complains about delayed flights in a reservation and wants to change or cancel the reservation, the agent can offer a certificate as a gesture after confirming the facts and changing or cancelling the reservation, with the amount being $50 times the number of passengers.\n\nDo not offer compensation for any other reason than the ones listed above.",
+ "effect_timeline": null
+}
