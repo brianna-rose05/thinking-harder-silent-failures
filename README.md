@@ -1,6 +1,8 @@
-# Thinking Harder Doesn't Catch Silent Failures
+# Thinking Harder Doesn't Help AI Catch Silent Failures
 
 **Code, data and full results for a study of whether higher reasoning effort helps AI agents catch silently failed saves**
+
+📄 **Read the paper:** [Thinking Harder Doesn't Help AI Catch Silent Failures](https://outsideengineer.substack.com/p/thinking-harder-doesnt-help-ai-catch)
 
 AI customer service agents worked 20 airline tasks from [τ-bench](https://github.com/sierra-research/tau2-bench) (v1.0.1). In every attempt, the first save returned a normal success response but changed nothing. Claude Sonnet 5.5, GPT-6.1 Sol and DeepSeek V4.1 Flash each ran every task at low and high reasoning effort: 120 attempts.
 
@@ -20,7 +22,9 @@ This is a follow-up to [Do AI Agents Check Their Work?](https://outsideengineer.
 - **DeepSeek's high setting did not raise its reasoning** in these conversations, so its comparison says nothing about effort.
 - The study cost **$13.86** in total, including the pilot and discarded test runs.
 
-All graphics are in [`figures/`](figures).
+All tables and figures from the paper are in [`figures/`](figures), numbered as in the paper.
+
+![How a failure gets missed](figures/figure1-how-a-failure-gets-missed.png)
 
 ## How the trap works
 
@@ -39,7 +43,7 @@ triage.py              splits attempts into clear misses and ones to read in ful
 review_brief.py        compact view of an attempt from the blocked save onward
 review_dump.py         writes review excerpts for every attempt
 analyze.py             catch rates, McNemar tests, Wilson intervals, cost and waiting time
-figures/               Outside Engineer graphics for every table and figure
+figures/               Outside Engineer graphics for every table and figure in the paper
 results/
   main_sonnet/ main_gpt/ main_deepseek/   the 120 scored attempts: results.csv + transcripts/
   review_labels.csv     hand-review labels that override the script's draft outcome
@@ -90,4 +94,4 @@ Every transcript holds the full conversation, every tool call and result, token 
 
 ## Citation
 
-> Pischke, B. (2026). *Thinking Harder Doesn't Catch Silent Failures.*
+> Pischke, B. (2026). *Thinking Harder Doesn't Help AI Catch Silent Failures.* Outside Engineer. https://outsideengineer.substack.com/p/thinking-harder-doesnt-help-ai-catch
