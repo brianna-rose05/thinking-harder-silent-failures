@@ -1,8 +1,10 @@
 # Thinking Harder Doesn't Help AI Catch Silent Failures
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23895165.svg)](https://doi.org/10.5281/zenodo.23895165)
+
 **Code, data and full results for a study of whether higher reasoning effort helps AI agents catch silently failed saves**
 
-📄 **Read the paper:** [Thinking Harder Doesn't Help AI Catch Silent Failures](https://outsideengineer.substack.com/p/thinking-harder-doesnt-help-ai-catch)
+📄 **Paper (preprint, PDF):** [doi.org/10.5281/zenodo.23895165](https://doi.org/10.5281/zenodo.23895165) · [PDF in this repo](paper/Pischke_2026_Thinking_Harder_Doesnt_Help_AI_Catch_Silent_Failures.pdf) · [web version](https://outsideengineer.substack.com/p/thinking-harder-doesnt-help-ai-catch)
 
 AI customer service agents worked 20 airline tasks from [τ-bench](https://github.com/sierra-research/tau2-bench) (v1.0.1). In every attempt, the first save returned a normal success response but changed nothing. Claude Sonnet 5.5, GPT-6.1 Sol and DeepSeek V4.1 Flash each ran every task at low and high reasoning effort: 120 attempts.
 
@@ -94,4 +96,16 @@ Every transcript holds the full conversation, every tool call and result, token 
 
 ## Citation
 
-> Pischke, B. (2026). *Thinking Harder Doesn't Help AI Catch Silent Failures.* Outside Engineer. https://outsideengineer.substack.com/p/thinking-harder-doesnt-help-ai-catch
+> Pischke, B. (2026). *Thinking Harder Doesn't Help AI Catch Silent Failures: Reasoning Effort and Silently Failed Saves in Tool-Using Customer Service Agents*. Zenodo. https://doi.org/10.5281/zenodo.23895165
+
+```bibtex
+@misc{pischke2026thinkingharder,
+  author    = {Pischke, BriAnna},
+  title     = {Thinking Harder Doesn't Help AI Catch Silent Failures: Reasoning Effort and Silently Failed Saves in Tool-Using Customer Service Agents},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.23895165},
+  url       = {https://doi.org/10.5281/zenodo.23895165},
+  note      = {Preprint}
+}
+```
